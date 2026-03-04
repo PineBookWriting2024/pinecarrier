@@ -1,0 +1,1253 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Pine Carrier &amp; Transportation Templatei">
+  <link href="assets/images/favicon/favicon.png" rel="icon">
+  <title>Pine Carrier &amp; Instant Quote</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:400,500,700%7cPoppins:400,600,700&display=swap">
+  <link rel="stylesheet" href="assets/css/libraries.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .request__form {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    .request-quote-tabs .request__form:before,
+    .request-quote-tabs .request__form:after {
+      display: none !important;
+    }
+
+    .quote-wizard-wrap {
+      display: flex;
+      justify-content: stretch;
+      width: 100%;
+    }
+
+    .quote-wizard-wrap .request__form-body {
+      width: 100%;
+      max-width: none;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+      padding: 18px 18px 22px;
+    }
+
+    .qw-header {
+      margin-bottom: 14px;
+    }
+
+    .qw-title {
+      font-size: 32px;
+      line-height: 1.1;
+      margin: 0;
+      font-weight: 800;
+      color: #111;
+    }
+
+    .qw-subtitle {
+      margin-top: 6px;
+      font-size: 14px;
+      color: #333;
+      font-weight: 600;
+    }
+
+    .qw-subtitle a {
+      color: #005caf;
+      text-decoration: none;
+    }
+
+    .qw-stepper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 12px 0 16px;
+      padding: 0 6px;
+    }
+
+    .qw-step-line {
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      top: 50%;
+      height: 2px;
+      background: #e9e9e9;
+      transform: translateY(-50%);
+      z-index: 0;
+    }
+
+    .qw-step-dot {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: none;
+      background: #f1f1f1;
+      color: #333;
+      font-weight: 800;
+      display: grid;
+      place-items: center;
+      z-index: 1;
+    }
+
+    .qw-step-dot.is-active {
+      background: #111;
+      color: #fff;
+    }
+
+    .qw-step-dot.is-done {
+      background: #005caf;
+      color: #fff;
+    }
+
+    .qw-label {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #111;
+      display: inline-block;
+    }
+
+    .qw-req {
+      color: #e74c3c;
+    }
+
+    /* .qw-input {
+      height: 46px;
+      border: 1px solid #e6e6e6;
+      border-radius: 8px;
+      font-size: 14px;
+      padding: 10px 12px;
+      box-shadow: none;
+    } */
+
+    .qw-input:focus {
+      border-color: #005caf;
+      box-shadow: 0 0 0 .2rem rgba(243, 156, 18, .16);
+    }
+
+    .qw-radio-group {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .qw-radio {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: #333;
+      margin: 0;
+      cursor: pointer;
+    }
+
+    .qw-radio input {
+      position: absolute;
+      opacity: 0;
+    }
+
+    .qw-radio-ui {
+      width: 16px;
+      height: 16px;
+      border: 2px solid #ccc;
+      border-radius: 50%;
+      display: inline-block;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .qw-radio input:checked+.qw-radio-ui::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #005caf;
+      top: 2px;
+      left: 2px;
+    }
+
+    .qw-check {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin: 0;
+      cursor: pointer;
+    }
+
+    .qw-check input {
+      position: absolute;
+      opacity: 0;
+    }
+
+    .qw-check-ui {
+      width: 16px;
+      height: 16px;
+      border: 2px solid #ccc;
+      border-radius: 3px;
+      margin-top: 2px;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .qw-check input:checked+.qw-check-ui::after {
+      content: "";
+      position: absolute;
+      left: 3px;
+      top: 0;
+      width: 5px;
+      height: 9px;
+      border: solid #005caf;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+
+    .qw-check-text {
+      font-size: 11.5px;
+      line-height: 1.45;
+      color: #666;
+    }
+
+    .qw-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 6px;
+    }
+
+    .qw-step {
+      display: none;
+    }
+
+    .qw-step.is-active {
+      display: block;
+    }
+
+    .qw-thanks {
+      text-align: center;
+      padding: 16px 4px 8px;
+    }
+
+    .qw-thanks-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 0 auto;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(145deg, #005caf, #005caf);
+      box-shadow: 0 12px 26px rgba(243, 156, 18, .35);
+    }
+
+    .qw-thanks-title {
+      margin-top: 14px;
+      margin-bottom: 0;
+      font-size: 44px;
+      line-height: 1;
+      font-weight: 900;
+      color: #111;
+    }
+
+    .qw-thanks-text {
+      margin-top: 10px;
+      font-weight: 700;
+      color: #005caf;
+    }
+
+    .quote-wizard-wrap .form-group {
+      margin-bottom: 14px;
+    }
+
+    #requestQuoteTabs .request-quote-panel>.quote-wizard-wrap {
+      flex: 0 0 71%;
+      max-width: 100%;
+    }
+
+    #requestQuoteTabs .quote-wizard-wrap .request__form-body {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 992px) {
+      #requestQuoteTabs .request-quote-panel>.quote-wizard-wrap {
+        max-width: none;
+      }
+    }
+
+    #fancyboxLayout1 {
+      background: #f0f2f6;
+    }
+
+    #fancyboxLayout1 .state-card {
+      background: #e2e5ea;
+      border-radius: 4px;
+      padding: 18px 18px 20px;
+      margin-bottom: 28px;
+      min-height: 100%;
+    }
+
+    #fancyboxLayout1 .state-card__img {
+      width: 100%;
+      height: 122px;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    #fancyboxLayout1 .state-card__title {
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 400;
+      text-align: center;
+      margin: 0 0 12px;
+      color: #0b1220;
+    }
+
+    #fancyboxLayout1 .state-card__desc {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.45;
+      color: #0b1220;
+      text-align: center;
+    }
+
+    #homeFaq {
+      background: #f7f7f7;
+    }
+
+    #homeFaq .heading__title {
+      margin-bottom: 35px;
+    }
+
+    #homeFaq .faq-visual {
+      position: relative;
+      min-height: 780px;
+      border-radius: 12px;
+      overflow: hidden;
+      background: url("assets/images/logistic_header.jpg") center center / cover no-repeat;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    #homeFaq .faq-visual:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(240, 242, 246, 0.62);
+    }
+
+    #homeFaq .faq-visual__content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 76px 35px 30px;
+    }
+
+    #homeFaq .faq-visual__title {
+      font-size: 30px;
+      line-height: 1.16;
+      margin-bottom: 20px;
+      color: #101010;
+    }
+
+    #homeFaq .faq-visual__phone {
+      font-size: 20px;
+      line-height: 1.35;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 26px;
+    }
+
+    #homeFaq .faq-visual__phone span {
+      color: #005caf;
+    }
+
+    #homeFaq .faq-visual .btn {
+      min-width: 190px;
+    }
+
+    #homeFaq .faq-list {
+      padding-top: 18px;
+    }
+
+    #homeFaq .faq-qa-item {
+      border: 1px solid #e6ebf2;
+      border-radius: 14px;
+      background: #ffffff;
+      margin-bottom: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(16, 24, 40, 0.05);
+    }
+
+    #homeFaq .faq-qa-item .collapse,
+    #homeFaq .faq-qa-item .collapsing {
+      transition: height 0.42s ease;
+    }
+
+    #homeFaq .faq-qa-header {
+      position: relative;
+      padding: 20px 56px 20px 24px;
+      cursor: pointer;
+      background: #f4f6f9;
+      border-bottom: 1px solid transparent;
+      transition: background-color 0.25s ease, border-color 0.25s ease;
+    }
+
+    #homeFaq .faq-qa-title {
+      display: block;
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.35;
+      color: #121c45;
+      text-decoration: none;
+      transition: color 0.25s ease;
+    }
+
+    #homeFaq .faq-qa-header:after {
+      content: "+";
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #aeb6c4;
+      font-size: 26px;
+      line-height: 1;
+      font-weight: 400;
+      transition: color 0.25s ease;
+    }
+
+    #homeFaq .faq-qa-header.opened {
+      background: #ffffff;
+      border-bottom-color: #e6ebf2;
+    }
+
+    #homeFaq .faq-qa-header.opened .faq-qa-title {
+      color: #005caf;
+    }
+
+    #homeFaq .faq-qa-header.opened:after {
+      content: "-";
+      right: 22px;
+      color: #005caf;
+    }
+
+    #homeFaq .faq-qa-body {
+      padding: 16px 24px 18px;
+    }
+
+    #homeFaq .faq-qa-body p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.55;
+      color: #6d7280;
+    }
+
+    @media (max-width: 1199px) {
+      #homeFaq .faq-visual__title {
+        font-size: 34px;
+      }
+
+      #homeFaq .faq-visual__phone {
+        font-size: 26px;
+      }
+
+      #homeFaq .faq-qa-title {
+        font-size: 18px;
+      }
+
+      #homeFaq .faq-qa-body p {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      #homeFaq {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+
+      #homeFaq .faq-visual {
+        min-height: 540px;
+        margin-bottom: 25px;
+      }
+
+      #homeFaq .faq-visual__content {
+        padding-top: 56px;
+      }
+
+      #homeFaq .faq-qa-header {
+        padding: 16px 50px 16px 18px;
+      }
+
+      #homeFaq .faq-qa-body {
+        padding: 0 18px 16px;
+      }
+    }
+
+    #shippingCostInfo {
+      background: #f5f7fa;
+    }
+
+    #shippingCostInfo .info-left {
+      padding-right: 24px;
+    }
+
+    #shippingCostInfo .info-title {
+      font-size: 42px;
+      line-height: 1.12;
+      margin-bottom: 28px;
+      color: #fff;
+    }
+
+    #shippingCostInfo .info-text {
+      font-size: 14px;
+      line-height: 1.55;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    #shippingCostInfo .info-text a {
+      color: #48e3fd;
+    }
+
+    #shippingCostInfo .info-btn {
+      margin-top: 8px;
+      min-width: 260px;
+    }
+
+    #shippingCostInfo .factor-card {
+      background: #ffffff;
+      border: 1px solid #e7ebf1;
+      border-left: 4px solid #62e5fc;
+      border-radius: 6px;
+      padding: 24px 24px 24px 96px;
+      margin-bottom: 16px;
+      position: relative;
+      box-shadow: 0 6px 14px rgba(18, 28, 69, 0.05);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    #shippingCostInfo .factor-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px rgba(18, 28, 69, 0.09);
+      border-color: #dbe2ec;
+    }
+
+    #shippingCostInfo .factor-card i {
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 1px solid #48e3fd;
+      color: #005caf;
+      background: transparent;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+
+    #shippingCostInfo .factor-card h4 {
+      font-size: 19px;
+      line-height: 1.2;
+      margin-bottom: 6px;
+      color: #121c45;
+    }
+
+    #shippingCostInfo .factor-card p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.52;
+      color: #4f5565;
+    }
+
+    @media (max-width: 1199px) {
+      #shippingCostInfo .info-title {
+        font-size: 40px;
+      }
+
+      #shippingCostInfo .info-text,
+      #shippingCostInfo .factor-card p {
+        font-size: 18px;
+      }
+
+      #shippingCostInfo .factor-card h4 {
+        font-size: 30px;
+      }
+    }
+
+    @media (min-width: 992px) {
+
+      #shippingCostInfo,
+      #shippingCostInfo .container,
+      #shippingCostInfo .row {
+        overflow: visible;
+      }
+
+      #shippingCostInfo .shipping-sticky-col {
+        align-self: flex-start;
+      }
+
+      #shippingCostInfo .shipping-sticky-col .info-left {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 120px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      #shippingCostInfo .info-left {
+        padding-right: 0;
+        margin-bottom: 24px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      #shippingCostInfo {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+
+      #shippingCostInfo .info-title {
+        font-size: 14px;
+      }
+
+      #shippingCostInfo .info-text,
+      #shippingCostInfo .factor-card p {
+        font-size: 14px;
+      }
+
+      #shippingCostInfo .factor-card {
+        padding: 18px 16px 18px 74px;
+      }
+
+      #shippingCostInfo .factor-card i {
+        top: 18px;
+        left: 16px;
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+      }
+
+      #shippingCostInfo .factor-card h4 {
+        font-size: 24px;
+      }
+    }
+
+    #quoteWizardModal .modal-dialog {
+      max-width: 980px;
+    }
+
+    #quoteWizardModal .modal-content {
+      border: 0;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    #quoteWizardModal .modal-header {
+      border-bottom: 1px solid #edf1f6;
+      padding: 14px 20px;
+    }
+
+    #quoteWizardModal .modal-title {
+      font-size: 20px;
+      color: #121c45;
+      margin: 0;
+    }
+
+    #quoteWizardModal .modal-body {
+      padding: 0;
+      background: #ffffff;
+      overflow: hidden;
+    }
+
+    #quoteWizardModal .quote-modal-grid {
+      display: flex;
+      min-height: 620px;
+      max-height: calc(100vh - 140px);
+    }
+
+    #quoteWizardModal .quote-modal-image {
+      width: 42%;
+      position: relative;
+      background: url("assets/images/logistic_header.jpg") center center / cover no-repeat;
+    }
+
+    #quoteWizardModal .quote-modal-image:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(18, 28, 69, 0.45);
+    }
+
+    #quoteWizardModal .quote-modal-form-panel {
+      width: 58%;
+      overflow-y: auto;
+      background: #ffffff;
+    }
+
+    #quoteWizardModal .quote-wizard-wrap {
+      margin: 0;
+      border: 0;
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    @media (max-width: 991px) {
+      #quoteWizardModal .quote-modal-grid {
+        display: block;
+        max-height: calc(100vh - 130px);
+      }
+
+      #quoteWizardModal .quote-modal-image {
+        width: 100%;
+        height: 210px;
+      }
+
+      #quoteWizardModal .quote-modal-form-panel {
+        width: 100%;
+        max-height: calc(100vh - 340px);
+      }
+    }
+
+    @media (min-width: 992px) {
+      .navbar .for-individuals-menu {
+        width: min(900px, calc(100vw - 32px));
+        max-width: none;
+        padding: 22px 20px;
+        left: auto;
+        right: 0;
+        transform: none;
+      }
+
+      .navbar .for-individuals-menu .fi-grid {
+        display: flex;
+        gap: 0;
+      }
+
+      .navbar .for-individuals-menu .fi-col {
+        width: 33.333%;
+        padding: 0 20px;
+      }
+
+      .navbar .for-individuals-menu .fi-col+.fi-col {
+        border-left: 1px solid #e4e8ef;
+      }
+
+      .navbar .for-individuals-menu .fi-title {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+        margin: 0 0 16px;
+      }
+
+      .navbar .for-individuals-menu .fi-empty-title {
+        opacity: 0;
+      }
+
+      .navbar .for-individuals-menu .fi-link {
+        display: block;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        color: #000;
+        text-transform: capitalize;
+        position: relative;
+        border-bottom: 1px solid #eaeaea;
+        margin-bottom: 2px;
+      }
+
+      .navbar .for-individuals-menu .fi-link:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 0;
+        height: 1px;
+        background-color: #005caf;
+        transition: all 0.8s linear;
+      }
+
+      .navbar .for-individuals-menu .fi-link:hover {
+        color: #005caf;
+      }
+
+      .navbar .for-individuals-menu .fi-link:hover:after {
+        width: 100%;
+      }
+
+      .navbar .for-individuals-menu .fi-item:last-child .fi-link {
+        border-bottom: none;
+      }
+
+      .navbar .for-individuals-menu .fi-sub {
+        display: block;
+        font-size: 14px;
+        line-height: 1.25;
+        color: #8a92a3;
+        margin-bottom: 16px;
+      }
+
+      .navbar .for-individuals-menu .fi-item:last-child .fi-sub {
+        margin-bottom: 0;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .navbar .for-individuals-menu .fi-grid {
+        display: block;
+      }
+
+      .navbar .for-individuals-menu .fi-col {
+        width: 100%;
+        padding: 0;
+      }
+
+      .navbar .for-individuals-menu .fi-col+.fi-col {
+        border-left: 0;
+        border-top: 1px solid #eef1f5;
+        margin-top: 10px;
+        padding-top: 10px;
+      }
+
+      .navbar .for-individuals-menu .fi-title {
+        font-size: 18px;
+        margin: 0 0 8px;
+        color: #747b88;
+      }
+
+      .navbar .for-individuals-menu .fi-empty-title {
+        display: none;
+      }
+
+      .navbar .for-individuals-menu .fi-link {
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25;
+        color: #9b9b9b;
+        text-transform: capitalize;
+        position: relative;
+        border-bottom: 1px solid #eaeaea;
+        margin-bottom: 2px;
+      }
+
+      .navbar .for-individuals-menu .fi-link:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 0;
+        height: 1px;
+        background-color: #005caf;
+        transition: all 0.8s linear;
+      }
+
+      .navbar .for-individuals-menu .fi-link:hover:after {
+        width: 100%;
+      }
+
+      .navbar .for-individuals-menu .fi-item:last-child .fi-link {
+        border-bottom: none;
+      }
+
+      .navbar .for-individuals-menu .fi-sub {
+        display: block;
+        font-size: 13px;
+        line-height: 1.25;
+        color: #8a92a3;
+        margin-bottom: 10px;
+      }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .navbar .for-individuals-menu {
+        width: calc(100vw - 32px);
+        max-width: calc(100vw - 32px);
+        padding: 18px 14px;
+        left: auto;
+        right: 0;
+        transform: none;
+      }
+
+      .navbar .for-individuals-menu .fi-col {
+        padding: 0 12px;
+      }
+
+      .navbar .for-individuals-menu .fi-title {
+        font-size: 15px;
+        margin-bottom: 12px;
+      }
+
+      .navbar .for-individuals-menu .fi-link {
+        font-size: 13px;
+        line-height: 24px;
+      }
+
+      .navbar .for-individuals-menu .fi-sub {
+        font-size: 12px;
+        margin-bottom: 12px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .navbar .for-individuals-menu {
+        position: static;
+        left: 0 !important;
+        right: auto !important;
+        transform: none !important;
+        width: 100%;
+        max-height: 62vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 10px 14px;
+      }
+
+      .navbar .for-individuals-menu .fi-item {
+        margin-bottom: 4px;
+      }
+
+      .navbar .for-individuals-menu .fi-sub {
+        padding-bottom: 8px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .navbar .nav__item--individuals {
+        position: static;
+      }
+
+      .navbar .nav__item--individuals .for-individuals-menu {
+        left: 15px !important;
+        right: 15px !important;
+        width: auto !important;
+        max-width: none !important;
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- =========================
+        Header
+    =========================== -->
+        <div id="site-header" class="header header-transparent"></div>
+    <script>
+      (function () {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "assets/includes/header.html", false);
+        xhr.send(null);
+        if (xhr.status === 200 || xhr.status === 0) {
+          document.getElementById("site-header").innerHTML = xhr.responseText;
+        }
+      })();
+    </script>
+
+    <!-- ========================
+       page title 
+    =========================== -->
+    <section id="page-title" class="page-title page-title-layout4 text-center bg-overlay bg-parallax">
+      <div class="bg-img"><img src="assets/images/qoute-bg.jpg" alt="background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <h1 class="pagetitle__heading text-left">Request A Quote</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Features</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Request A Quote</li>
+              </ol>
+            </nav>
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.page-title -->
+
+    <section id="requestQuoteTabs" class="request-quote request-quote-tabs p-0  my-20">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="request__form">
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="quote">
+                  <div class="request-quote-panel">
+                    <div class="quote-wizard-wrap">
+                      <div class="request__form-body">
+
+                        <!-- Header -->
+                        <div class="qw-header text-center">
+                          <h2 class="qw-title">Get A Quote Online</h2>
+                          <div class="qw-subtitle">
+                            or call at <a href="tel:+12152012020">(215)-201-2020</a>
+                          </div>
+                        </div>
+
+                        <!-- Stepper -->
+                        <div class="qw-stepper" aria-label="Quote Wizard Steps">
+                          <div class="qw-step-line"></div>
+                          <button type="button" class="qw-step-dot is-active" data-step-dot="1"
+                            aria-current="step">1</button>
+                          <button type="button" class="qw-step-dot" data-step-dot="2" disabled>2</button>
+                          <button type="button" class="qw-step-dot" data-step-dot="3" disabled>3</button>
+                        </div>
+
+                        <!-- Form -->
+                        <form id="quoteWizardForm" novalidate>
+                          <!-- STEP 1 -->
+                          <div class="qw-step is-active" data-step="1">
+                            <div class="form-group">
+                              <label class="qw-label">Transport Car From: <span class="qw-req">*</span></label>
+                              <input type="text" name="from_zip" class="form-control qw-input"
+                                placeholder="66019 : Clearview City KS" required />
+                            </div>
+
+                            <div class="form-group">
+                              <label class="qw-label">Transport Car To: <span class="qw-req">*</span></label>
+                              <input type="text" name="to_zip" class="form-control qw-input"
+                                placeholder="66019 : Clearview City KS" required />
+                            </div>
+
+                            <div class="form-group">
+                              <label class="qw-label">Transport type: <span class="qw-req">*</span></label>
+                              <div class="qw-radio-group">
+                                <label class="qw-radio">
+                                  <input type="radio" name="transport_type" value="Open" required />
+                                  <span class="qw-radio-ui"></span>
+                                  <span>Open</span>
+                                </label>
+
+                                <label class="qw-radio">
+                                  <input type="radio" name="transport_type" value="Enclosed" required />
+                                  <span class="qw-radio-ui"></span>
+                                  <span>Enclosed</span>
+                                </label>
+                              </div>
+                            </div>
+
+                            <div class="form-group">
+                              <label class="qw-check">
+                                <input type="checkbox" name="consent" required />
+                                <span class="qw-check-ui"></span>
+                                <span class="qw-check-text">
+                                  By checking this box, you agree to our Terms and Privacy Policy, allowing us to send
+                                  automated sales calls, text messages, and prerecorded voicemails to the provided phone
+                                  number. Your consent is not required for purchasing any items, commodities, or
+                                  services. Message and data rates may apply.
+                                </span>
+                              </label>
+                            </div>
+
+                            <button type="button" class="btn btn__secondary btn__block" data-next>
+                              Next
+                            </button>
+                          </div>
+
+                          <!-- STEP 2 -->
+                          <div class="qw-step" data-step="2">
+                            <div class="form-group form-group-select">
+                              <label class="qw-label">Vehicle type: <span class="qw-req">*</span></label>
+                              <select class="form-control qw-input" name="vehicle_type" required>
+                                <option value="" selected disabled>Select Vehicle type</option>
+                                <option>Car</option>
+                                <option>Truck</option>
+                                <option>Motorcycle</option>
+                                <option>ATV & UTV</option>
+                                <option>Boat</option>
+                                <option>PWC</option>
+                                <option>Snowmobile</option>
+                                <option>RV/Trailer</option>
+                                <option>Commercial Truck</option>
+                                <option>Heavy Equipment</option>
+                                <option>Other</option>
+                              </select>
+                            </div>
+
+                            <div class="form-group form-group-select">
+                              <label class="qw-label">Vehicle year: <span class="qw-req">*</span></label>
+                              <select class="form-control qw-input" name="vehicle_year" required>
+                                <option value="" selected disabled>Select Vehicle year</option>
+                                <!-- JS will populate years -->
+                              </select>
+                            </div>
+
+                            <div class="form-group form-group-select">
+                              <label class="qw-label">Vehicle make: <span class="qw-req">*</span></label>
+                              <select class="form-control qw-input" name="vehicle_make" required>
+                                <option value="" selected disabled>Select Brand</option>
+                                <option>Acura</option>
+                                <option>Alfa Romeo</option>
+                                <option>Aptera</option>
+                                <option>Aston Martin</option>
+                                <option>Audi</option>
+                                <option>Austin</option>
+                                <option>Bentley</option>
+                                <option>BMW</option>
+                                <option>Buick</option>
+                                <option>Cadillac</option>
+                                <option>Chevrolet</option>
+                                <option>Chrysler</option>
+                                <option>Dodge</option>
+                                <option>Ferrari</option>
+                                <option>FIAT</option>
+                                <option>Ford</option>
+                                <option>GMC</option>
+                                <option>Honda</option>
+                                <option>Hyundai</option>
+                                <option>Infiniti</option>
+                                <option>Jaguar</option>
+                                <option>Jeep</option>
+                                <option>Kia</option>
+                                <option>Lamborghini</option>
+                                <option>Land Rover</option>
+                                <option>Lexus</option>
+                                <option>Lincoln</option>
+                                <option>Maserati</option>
+                                <option>Mazda</option>
+                                <option>McLaren</option>
+                                <option>Mercedes-Benz</option>
+                                <option>Mini</option>
+                                <option>Mitsubishi</option>
+                                <option>Nissan</option>
+                                <option>Porsche</option>
+                                <option>Ram</option>
+                                <option>Subaru</option>
+                                <option>Tesla</option>
+                                <option>Toyota</option>
+                                <option>Volkswagen</option>
+                                <option>Volvo</option>
+                              </select>
+                            </div>
+
+                            <div class="form-group">
+                              <label class="qw-label">Vehicle model: <span class="qw-req">*</span></label>
+                              <input type="text" name="vehicle_model" class="form-control qw-input" placeholder=""
+                                required />
+                            </div>
+
+                            <div class="form-group">
+                              <label class="qw-label">Is it running <span class="qw-req">*</span></label>
+                              <div class="qw-radio-group">
+                                <label class="qw-radio">
+                                  <input type="radio" name="is_running" value="Yes" required />
+                                  <span class="qw-radio-ui"></span>
+                                  <span>Yes</span>
+                                </label>
+
+                                <label class="qw-radio">
+                                  <input type="radio" name="is_running" value="No" required />
+                                  <span class="qw-radio-ui"></span>
+                                  <span>No</span>
+                                </label>
+                              </div>
+                            </div>
+
+                            <div class="qw-actions">
+                              <button type="button" class="btn btn__secondary btn__block" data-prev>Previous</button>
+                              <button type="button" class="btn btn__secondary btn__block" data-next>Next</button>
+                            </div>
+                          </div>
+
+                          <!-- STEP 3 -->
+                          <div class="qw-step" data-step="3">
+                            <div class="form-group">
+                              <label class="qw-label">First available date: <span class="qw-req">*</span></label>
+                              <input type="date" name="available_date" class="form-control qw-input" required />
+                            </div>
+
+                            <div class="form-group">
+                              <label class="qw-label">Full Name: <span class="qw-req">*</span></label>
+                              <input type="text" name="full_name" class="form-control qw-input"
+                                placeholder="Enter Full Name" required />
+                            </div>
+
+                            <div class="form-group">
+                              <label class="qw-label">Phone: <span class="qw-req">*</span></label>
+                              <input type="tel" name="phone" class="form-control qw-input" placeholder="(123) 456-7890"
+                                required minlength="7" />
+                            </div>
+
+                            <div class="form-group">
+                              <label class="qw-label">Send a copy of the quote to: <span class="qw-req">*</span></label>
+                              <input type="email" name="email" class="form-control qw-input"
+                                placeholder="Enter your email" required />
+                            </div>
+
+                            <div class="qw-actions">
+                              <button type="button" class="btn btn__secondary btn__block" data-prev>Previous</button>
+                              <button type="submit" class="btn btn__secondary btn__block">submit</button>
+                            </div>
+                          </div>
+                        </form>
+
+                        <!-- THANK YOU -->
+                        <div class="qw-thanks" id="quoteThanks" hidden>
+                          <div class="qw-thanks-icon" aria-hidden="true">
+                            <!-- check icon -->
+                            <svg width="54" height="54" viewBox="0 0 24 24" fill="none">
+                              <path d="M20 6L9 17l-5-5" stroke="#fff" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                          </div>
+                          <h2 class="qw-thanks-title">Thank You</h2>
+                          <p class="qw-thanks-text">We will email your quote and reach you back<br />shortly !</p>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="widget widget-download bg-theme">
+                      <div class="widget__content">
+                        <h5>Industry<br>Solutions!</h5>
+                        <p>Our worldwide presence ensures the timeliness, cost efficiency and compliance adherence
+                          required to ensure your production timelines are met.</p>
+                        <a href="#" class="btn btn__secondary btn__hover2 btn__block">
+                          <span>Request A Quote</span><i class="icon-arrow-right"></i>
+                        </a>
+                      </div><!-- /.widget__content -->
+                    </div><!-- /.widget-download -->
+                  </div><!-- /.request-quote-panel-->
+                </div><!-- /.tab -->
+
+              </div><!-- /.tab-content -->
+            </div><!-- /.request-form -->
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.Request Quote Tabs -->
+
+        <div id="site-footer"></div>
+    <script>
+      (function () {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "assets/includes/footer.html", false);
+        xhr.send(null);
+        if (xhr.status === 200 || xhr.status === 0) {
+          document.getElementById("site-footer").innerHTML = xhr.responseText;
+        }
+      })();
+    </script>
+  </div><!-- /.wrapper -->
+
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/quote-wizard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1239 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Need fast car shipping? Pine Carrier offers expedited auto transport with priority scheduling, trusted carriers, and reliable delivery across the U.S. &amp; Transportation Templatei">
+  <link href="assets/images/favicon/favicon.png" rel="icon">
+  <title>Expedited Auto Transport for Faster Delivery</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:400,500,700%7cPoppins:400,600,700&display=swap">
+  <link rel="stylesheet" href="assets/css/libraries.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    #fancyboxLayout1 {
+      background: #f0f2f6;
+    }
+
+    #fancyboxLayout1 .state-card {
+      background: #e2e5ea;
+      border-radius: 4px;
+      padding: 18px 18px 20px;
+      margin-bottom: 28px;
+      min-height: 100%;
+    }
+
+    #fancyboxLayout1 .state-card__img {
+      width: 100%;
+      height: 122px;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    #fancyboxLayout1 .state-card__title {
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 400;
+      text-align: center;
+      margin: 0 0 12px;
+      color: #0b1220;
+    }
+
+    #fancyboxLayout1 .state-card__desc {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.45;
+      color: #0b1220;
+      text-align: center;
+    }
+
+    #homeFaq {
+      background: #f7f7f7;
+    }
+
+    #homeFaq .heading__title {
+      margin-bottom: 35px;
+    }
+
+    #homeFaq .faq-visual {
+      position: relative;
+      min-height: 780px;
+      border-radius: 12px;
+      overflow: hidden;
+      background: url("assets/images/logistic_header.jpg") center center / cover no-repeat;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    #homeFaq .faq-visual:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(240, 242, 246, 0.62);
+    }
+
+    #homeFaq .faq-visual__content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 76px 35px 30px;
+    }
+
+    #homeFaq .faq-visual__title {
+      font-size: 30px;
+      line-height: 1.16;
+      margin-bottom: 20px;
+      color: #101010;
+    }
+
+    #homeFaq .faq-visual__phone {
+      font-size: 20px;
+      line-height: 1.35;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 26px;
+    }
+
+    #homeFaq .faq-visual__phone span {
+      color: #005caf;
+    }
+
+    #homeFaq .faq-visual .btn {
+      min-width: 190px;
+    }
+
+    #homeFaq .faq-list {
+      padding-top: 18px;
+    }
+
+    #homeFaq .faq-qa-item {
+      border: 1px solid #e6ebf2;
+      border-radius: 14px;
+      background: #ffffff;
+      margin-bottom: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(16, 24, 40, 0.05);
+    }
+
+    #homeFaq .faq-qa-item .collapse,
+    #homeFaq .faq-qa-item .collapsing {
+      transition: height 0.42s ease;
+    }
+
+    #homeFaq .faq-qa-header {
+      position: relative;
+      padding: 20px 56px 20px 24px;
+      cursor: pointer;
+      background: #f4f6f9;
+      border-bottom: 1px solid transparent;
+      transition: background-color 0.25s ease, border-color 0.25s ease;
+    }
+
+    #homeFaq .faq-qa-title {
+      display: block;
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.35;
+      color: #121c45;
+      text-decoration: none;
+      transition: color 0.25s ease;
+    }
+
+    #homeFaq .faq-qa-header:after {
+      content: "+";
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #aeb6c4;
+      font-size: 26px;
+      line-height: 1;
+      font-weight: 400;
+      transition: color 0.25s ease;
+    }
+
+    #homeFaq .faq-qa-header.opened {
+      background: #ffffff;
+      border-bottom-color: #e6ebf2;
+    }
+
+    #homeFaq .faq-qa-header.opened .faq-qa-title {
+      color: #005caf;
+    }
+
+    #homeFaq .faq-qa-header.opened:after {
+      content: "-";
+      right: 22px;
+      color: #005caf;
+    }
+
+    #homeFaq .faq-qa-body {
+      padding: 16px 24px 18px;
+    }
+
+    #homeFaq .faq-qa-body p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.55;
+      color: #6d7280;
+    }
+
+    @media (max-width: 1199px) {
+      #homeFaq .faq-visual__title {
+        font-size: 34px;
+      }
+
+      #homeFaq .faq-visual__phone {
+        font-size: 26px;
+      }
+
+      #homeFaq .faq-qa-title {
+        font-size: 18px;
+      }
+
+      #homeFaq .faq-qa-body p {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      #homeFaq {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+
+      #homeFaq .faq-visual {
+        min-height: 540px;
+        margin-bottom: 25px;
+      }
+
+      #homeFaq .faq-visual__content {
+        padding-top: 56px;
+      }
+
+      #homeFaq .faq-qa-header {
+        padding: 16px 50px 16px 18px;
+      }
+
+      #homeFaq .faq-qa-body {
+        padding: 0 18px 16px;
+      }
+    }
+
+    #shippingCostInfo {
+      background: #f5f7fa;
+    }
+
+    #shippingCostInfo .info-left {
+      padding-right: 24px;
+    }
+
+    #shippingCostInfo .info-title {
+      font-size: 42px;
+      line-height: 1.12;
+      margin-bottom: 28px;
+      color: #fff;
+    }
+
+    #shippingCostInfo .info-text {
+      font-size: 14px;
+      line-height: 1.55;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    #shippingCostInfo .info-text a {
+      color: #48e3fd;
+    }
+
+    #shippingCostInfo .info-btn {
+      margin-top: 8px;
+      min-width: 260px;
+    }
+
+    #shippingCostInfo .factor-card {
+      background: #ffffff;
+      border: 1px solid #e7ebf1;
+      border-left: 4px solid #62e5fc;
+      border-radius: 6px;
+      padding: 24px 24px 24px 24px;
+      margin-bottom: 16px;
+      position: relative;
+      box-shadow: 0 6px 14px rgba(18, 28, 69, 0.05);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    #shippingCostInfo .factor-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px rgba(18, 28, 69, 0.09);
+      border-color: #dbe2ec;
+    }
+
+    #shippingCostInfo .factor-card i {
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 1px solid #48e3fd;
+      color: #005caf;
+      background: transparent;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+
+    #shippingCostInfo .factor-card h4 {
+      font-size: 19px;
+      line-height: 1.2;
+      margin-bottom: 6px;
+      color: #121c45;
+    }
+
+    #shippingCostInfo .factor-card p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.52;
+      color: #4f5565;
+    }
+
+    @media (max-width: 1199px) {
+      #shippingCostInfo .info-title {
+        font-size: 40px;
+      }
+
+      #shippingCostInfo .info-text,
+      #shippingCostInfo .factor-card p {
+        font-size: 18px;
+      }
+
+      #shippingCostInfo .factor-card h4 {
+        font-size: 30px;
+      }
+    }
+
+    @media (min-width: 992px) {
+
+      #shippingCostInfo,
+      #shippingCostInfo .container,
+      #shippingCostInfo .row {
+        overflow: visible;
+      }
+
+      #shippingCostInfo .shipping-sticky-col {
+        align-self: flex-start;
+      }
+
+      #shippingCostInfo .shipping-sticky-col .info-left {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 120px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      #shippingCostInfo .info-left {
+        padding-right: 0;
+        margin-bottom: 24px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      #shippingCostInfo {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+
+      #shippingCostInfo .info-title {
+        font-size: 14px;
+      }
+
+      #shippingCostInfo .info-text,
+      #shippingCostInfo .factor-card p {
+        font-size: 14px;
+      }
+
+      #shippingCostInfo .factor-card {
+        padding: 18px 16px 18px 74px;
+      }
+
+      #shippingCostInfo .factor-card i {
+        top: 18px;
+        left: 16px;
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+      }
+
+      #shippingCostInfo .factor-card h4 {
+        font-size: 24px;
+      }
+    }
+
+    #quoteWizardModal .modal-dialog {
+      max-width: 980px;
+    }
+
+    #quoteWizardModal .modal-content {
+      border: 0;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    #quoteWizardModal .modal-header {
+      border-bottom: 1px solid #edf1f6;
+      padding: 14px 20px;
+    }
+
+    #quoteWizardModal .modal-title {
+      font-size: 20px;
+      color: #121c45;
+      margin: 0;
+    }
+
+    #quoteWizardModal .modal-body {
+      padding: 0;
+      background: #ffffff;
+      overflow: hidden;
+    }
+
+    #quoteWizardModal .quote-modal-grid {
+      display: flex;
+      min-height: 620px;
+      max-height: calc(100vh - 140px);
+    }
+
+    #quoteWizardModal .quote-modal-image {
+      width: 42%;
+      position: relative;
+      background: url("assets/images/logistic_header.jpg") center center / cover no-repeat;
+    }
+
+    #quoteWizardModal .quote-modal-image:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(18, 28, 69, 0.45);
+    }
+
+    #quoteWizardModal .quote-modal-form-panel {
+      width: 58%;
+      overflow-y: auto;
+      background: #ffffff;
+    }
+
+    #quoteWizardModal .quote-wizard-wrap {
+      margin: 0;
+      border: 0;
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    @media (max-width: 991px) {
+      #quoteWizardModal .quote-modal-grid {
+        display: block;
+        max-height: calc(100vh - 130px);
+      }
+
+      #quoteWizardModal .quote-modal-image {
+        width: 100%;
+        height: 210px;
+      }
+
+      #quoteWizardModal .quote-modal-form-panel {
+        width: 100%;
+        max-height: calc(100vh - 340px);
+      }
+    }
+
+    @media (min-width: 992px) {
+      .navbar .for-individuals-menu {
+        width: min(900px, calc(100vw - 32px));
+        max-width: none;
+        padding: 22px 20px;
+        left: auto;
+        right: 0;
+        transform: none;
+      }
+
+      .navbar .for-individuals-menu .fi-grid {
+        display: flex;
+        gap: 0;
+      }
+
+      .navbar .for-individuals-menu .fi-col {
+        width: 33.333%;
+        padding: 0 20px;
+      }
+
+      .navbar .for-individuals-menu .fi-col+.fi-col {
+        border-left: 1px solid #e4e8ef;
+      }
+
+      .navbar .for-individuals-menu .fi-title {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+        margin: 0 0 16px;
+      }
+
+      .navbar .for-individuals-menu .fi-empty-title {
+        opacity: 0;
+      }
+
+      .navbar .for-individuals-menu .fi-link {
+        display: block;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        color: #000;
+        text-transform: capitalize;
+        position: relative;
+        border-bottom: 1px solid #eaeaea;
+        margin-bottom: 2px;
+      }
+
+      .navbar .for-individuals-menu .fi-link:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 0;
+        height: 1px;
+        background-color: #005caf;
+        transition: all 0.8s linear;
+      }
+
+      .navbar .for-individuals-menu .fi-link:hover {
+        color: #005caf;
+      }
+
+      .navbar .for-individuals-menu .fi-link:hover:after {
+        width: 100%;
+      }
+
+      .navbar .for-individuals-menu .fi-item:last-child .fi-link {
+        border-bottom: none;
+      }
+
+      .navbar .for-individuals-menu .fi-sub {
+        display: block;
+        font-size: 14px;
+        line-height: 1.25;
+        color: #8a92a3;
+        margin-bottom: 16px;
+      }
+
+      .navbar .for-individuals-menu .fi-item:last-child .fi-sub {
+        margin-bottom: 0;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .navbar .for-individuals-menu .fi-grid {
+        display: block;
+      }
+
+      .navbar .for-individuals-menu .fi-col {
+        width: 100%;
+        padding: 0;
+      }
+
+      .navbar .for-individuals-menu .fi-col+.fi-col {
+        border-left: 0;
+        border-top: 1px solid #eef1f5;
+        margin-top: 10px;
+        padding-top: 10px;
+      }
+
+      .navbar .for-individuals-menu .fi-title {
+        font-size: 18px;
+        margin: 0 0 8px;
+        color: #747b88;
+      }
+
+      .navbar .for-individuals-menu .fi-empty-title {
+        display: none;
+      }
+
+      .navbar .for-individuals-menu .fi-link {
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25;
+        color: #9b9b9b;
+        text-transform: capitalize;
+        position: relative;
+        border-bottom: 1px solid #eaeaea;
+        margin-bottom: 2px;
+      }
+
+      .navbar .for-individuals-menu .fi-link:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 0;
+        height: 1px;
+        background-color: #005caf;
+        transition: all 0.8s linear;
+      }
+
+      .navbar .for-individuals-menu .fi-link:hover:after {
+        width: 100%;
+      }
+
+      .navbar .for-individuals-menu .fi-item:last-child .fi-link {
+        border-bottom: none;
+      }
+
+      .navbar .for-individuals-menu .fi-sub {
+        display: block;
+        font-size: 13px;
+        line-height: 1.25;
+        color: #8a92a3;
+        margin-bottom: 10px;
+      }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .navbar .for-individuals-menu {
+        width: calc(100vw - 32px);
+        max-width: calc(100vw - 32px);
+        padding: 18px 14px;
+        left: auto;
+        right: 0;
+        transform: none;
+      }
+
+      .navbar .for-individuals-menu .fi-col {
+        padding: 0 12px;
+      }
+
+      .navbar .for-individuals-menu .fi-title {
+        font-size: 15px;
+        margin-bottom: 12px;
+      }
+
+      .navbar .for-individuals-menu .fi-link {
+        font-size: 13px;
+        line-height: 24px;
+      }
+
+      .navbar .for-individuals-menu .fi-sub {
+        font-size: 12px;
+        margin-bottom: 12px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .navbar .for-individuals-menu {
+        position: static;
+        left: 0 !important;
+        right: auto !important;
+        transform: none !important;
+        width: 100%;
+        max-height: 62vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 10px 14px;
+      }
+
+      .navbar .for-individuals-menu .fi-item {
+        margin-bottom: 4px;
+      }
+
+      .navbar .for-individuals-menu .fi-sub {
+        padding-bottom: 8px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .navbar .nav__item--individuals {
+        position: static;
+      }
+
+      .navbar .nav__item--individuals .for-individuals-menu {
+        left: 15px !important;
+        right: 15px !important;
+        width: auto !important;
+        max-width: none !important;
+        transform: none !important;
+      }
+    }
+
+    .door-cost-table-wrap {
+      border: 1px solid #e2e8f2;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #ffffff;
+      box-shadow: 0 8px 18px rgba(18, 28, 69, 0.06);
+    }
+
+    .door-cost-table {
+      width: 100%;
+      border-collapse: collapse;
+      /* min-width: 460px; */
+    }
+
+    .door-cost-table thead tr:first-child th {
+      background: #005caf;
+      color: #ffffff;
+      font-size: 17px;
+      font-weight: 700;
+      text-align: left;
+      padding: 10px 12px;
+      border: 1px solid #005caf;
+    }
+
+    .door-cost-table thead tr:nth-child(2) th {
+      background: #f3f6fb;
+      color: #121c45;
+      font-size: 13px;
+      font-weight: 700;
+      text-align: left;
+      padding: 9px 10px;
+      border: 1px solid #e2e8f2;
+    }
+
+    .door-cost-table tbody td {
+      background: #ffffff;
+      color: #2f3646;
+      font-size: 13px;
+      line-height: 1.35;
+      padding: 9px 10px;
+      border: 1px solid #e9edf4;
+    }
+
+    .door-cost-table tbody tr:nth-child(2n) td {
+      background: #fbfcfe;
+    }
+
+    @media (max-width: 991px) {
+      .door-cost-table {
+        min-width: 420px;
+      }
+
+      .door-cost-table thead tr:first-child th {
+        font-size: 14px;
+      }
+
+      .door-cost-table thead tr:nth-child(2) th {
+        font-size: 12px;
+      }
+
+      .door-cost-table tbody td {
+        font-size: 11px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- =========================
+        Header
+    =========================== -->
+        <div id="site-header" class="header header-transparent"></div>
+    <script>
+      (function () {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "assets/includes/header.html", false);
+        xhr.send(null);
+        if (xhr.status === 200 || xhr.status === 0) {
+          document.getElementById("site-header").innerHTML = xhr.responseText;
+        }
+      })();
+    </script>
+
+    <!-- ========================
+       page title 
+    =========================== -->
+    <section id="page-title" class="page-title bg-overlay bg-parallax">
+      <div class="bg-img"><img src="assets/images/For-Individuals/Expedited-auto-transport/8.webp" alt="background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <h1 class="pagetitle__heading">Expedited Auto Transport Service</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="services.html">services</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Expedited auto transport</li>
+              </ol>
+            </nav>
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.page-title -->
+
+    <!-- ======================
+     Text Content Section
+    ========================= -->
+    <section id="textContentSection" class="text-content-section pb-40">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-4">
+            <aside class="sidebar mb-30">
+              <div class="widget widget-help bg-overlay bg-overlay-grdient-secondary">
+                <div class="bg-img"><img src="assets/images/sidebar/1.jpg" alt="background"></div>
+                <div class="widget__content">
+                  <h5>Get Fast Shipping Quote</h5>
+                  <p>Request a quote now to schedule expedited vehicle transport with trusted Pine Carrier service.</p>
+                  <a href="#" class="btn btn__primary btn__hover2 btn__block">Request A Quote</a>
+                </div><!-- /.widget-content -->
+              </div><!-- /.widget-help -->
+            </aside><!-- /.sidebar -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-sm-12 col-md-12 col-lg-8">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="text__block mb-40">
+                  <h5 class="text__block-title">What Is Expedited Vehicle Shipping?
+</h5>
+                  <p class="text__block-desc">
+Expedited auto transport is a fast-track service for urgent vehicle shipments. Pine Carrier prioritizes your vehicle, arranging the quickest route and immediate carrier assignment for reliable, on-time delivery across local, regional, or long-distance routes.
+
+                  </p>
+                </div><!-- /.text-block -->
+                <div class="row">
+                  <div class="col-sm-12 col-md-7 col-lg-7">
+                    <div class="text__block  mb-40">
+                      <h5 class="text__block-title">How Much Does Expedited Transport Cost?
+                      </h5>
+                      <p class="text__block-desc">Expedited service costs more than standard shipping due to priority handling and faster transit. Pricing depends on vehicle type, size, distance, and availability. Pine Carrier provides upfront, transparent quotes so you can plan quickly without hidden charges.
+
+
+                      </p>
+                    </div><!-- /.text-block -->
+                  </div><!-- /.col-lg-7 -->
+                  <div class="col-sm-12 col-md-5 col-lg-5">
+                    <div class="door-cost-table-wrap mt-30 mb-30">
+                      <table class="door-cost-table" aria-label="Average car shipping cost per mile 2025">
+                        <thead>
+                          <tr>
+                            <th colspan="3">Average Car Shipping Cost per Mile (2025)</th>
+                          </tr>
+                          <tr>
+                            <th>Distance</th>
+                            <th>Open transport cost</th>
+                            <th>Enclosed transport cost</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1-500 miles</td>
+                            <td>$1.85/mile</td>
+                            <td>$2.53/mile</td>
+                          </tr>
+                          <tr>
+                            <td>501-1,500 miles</td>
+                            <td>$0.91/mile</td>
+                            <td>$1.25/mile</td>
+                          </tr>
+                          <tr>
+                            <td>1,500+ miles</td>
+                            <td>$0.59/mile</td>
+                            <td>$0.84/mile</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><!-- /.col-lg-5 -->
+                </div><!-- /.row -->
+
+
+
+              </div><!-- /.col-lg-8 -->
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+    </section><!-- /.Text Content Section -->
+
+    <section class="py-0">
+      <div class="container">
+        <div class="text__block">
+          <h5 class="text__block-title">Advantages of Expedited Auto Shipping</h5>
+          <p class="text__block-desc">Expedited auto transport ensures your vehicle reaches its destination faster than standard methods. Pine Carrier coordinates priority pickup, optimized routing, and experienced carriers to reduce transit time, making it ideal for time-sensitive moves, relocation, or emergency transport needs.
+          </p>
+        </div><!-- /.text-block -->
+        <div class="video-banner bg-overlay mb-50">
+          <div class="bg-img"><img src="assets/images/For-Individuals/Expedited-auto-transport/2.webp" alt="background"></div>
+          <div class="video__btn video__btn-white video__btn-left-bottom">
+            <a class="popup-video" href="assets/images/video/vid-1.mp4">
+              <span class="video__player-animation"></span>
+              <span class="video__player-animation video__player-animation-2"></span>
+              <span class="video__player-animation video__player-animation-3"></span>
+              <div class="video__player">
+                <i class="fa fa-play"></i>
+              </div>
+            </a>
+          </div>
+        </div><!-- /.video -->
+      </div><!-- /.col-lg-12 -->
+  </div><!-- /.row -->
+  </div>
+  </section>
+
+  <section class="py-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="text__block">
+            <h5 class="text__block-title">Key Features of Expedited Transport
+            </h5>
+            <p class="text__block-desc">Pine Carrier’s expedited service combines speed, reliability, and careful handling. Your vehicle is transported quickly with priority scheduling while maintaining the same high standards of safety and professionalism.</p>
+          </div><!-- /.text-block -->
+        </div><!-- /.col-lg-12 -->
+      </div><!-- /.row -->
+      <div class="row fancybox-layout2 mb-50">
+        <!-- fancybox item #1 -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="fancybox-item">
+            <div class="fancybox__icon">
+              <i class="icon-wallet"></i>
+            </div><!-- /.fancybox-icon -->
+            <div class="fancybox__content">
+              <h4 class="fancybox__title">Fastest Delivery</h4>
+              <p>Your vehicle is assigned a priority carrier to reduce transit time. Pine Carrier coordinates every step to ensure the quickest delivery possible without compromising safety or vehicle condition.
+
+              </p>
+            </div><!-- /.fancybox-content -->
+          </div><!-- /.fancybox-item -->
+        </div><!-- /.col-lg-4 -->
+        <!-- fancybox item #2 -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="fancybox-item">
+            <div class="fancybox__icon">
+              <i class="icon-search"></i>
+            </div><!-- /.fancybox-icon -->
+            <div class="fancybox__content">
+              <h4 class="fancybox__title">Priority Handling</h4>
+              <p>Expedited shipments are handled first, minimizing delays. From pickup to delivery, our experienced carriers give priority attention to ensure timely and secure transport of your vehicle.
+
+              </p>
+            </div><!-- /.fancybox-content -->
+          </div><!-- /.fancybox-item -->
+        </div><!-- /.col-lg-4 -->
+        <!-- fancybox item #3 -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="fancybox-item">
+            <div class="fancybox__icon">
+              <i class="icon-trolley"></i>
+            </div><!-- /.fancybox-icon -->
+            <div class="fancybox__content">
+              <h4 class="fancybox__title">Nationwide Availability
+              </h4>
+              <p>Expedited auto transport is available across the U.S., covering local, regional, and cross-country routes. Pine Carrier ensures fast, reliable service no matter the location.</p>
+            </div><!-- /.fancybox-content -->
+          </div><!-- /.fancybox-item -->
+        </div><!-- /.col-lg-4 -->
+        <!-- fancybox item #4 -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="fancybox-item">
+            <div class="fancybox__icon">
+              <i class="icon-package-6"></i>
+            </div><!-- /.fancybox-icon -->
+            <div class="fancybox__content">
+              <h4 class="fancybox__title">Dedicated Support
+
+              </h4>
+              <p>A dedicated Pine Carrier advisor guides you throughout the process, providing updates, answering questions, and coordinating carriers to ensure your expedited shipment meets your time-sensitive needs.
+
+              </p>
+            </div><!-- /.fancybox-content -->
+          </div><!-- /.fancybox-item -->
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    </div>
+  </section>
+
+  <section id="shippingCostInfo" class="pt-90 pb-90 bg-theme">
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col-sm-12 col-md-12 col-lg-7 shipping-sticky-col">
+          <div class="info-left">
+            <h2 class="info-title">Why Choose Pine Carrier for Expedited Transport
+
+            </h2>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-5">
+          <div class="factor-card">
+            <h4>Speed You Can Rely On 
+            </h4>
+            <p>Pine Carrier prioritizes your shipment, assigning the fastest route and experienced carriers for timely delivery
+
+            </p>
+          </div>
+          <div class="factor-card">
+            <h4>Professional, Vetted Carriers
+            </h4>
+            <p> Every carrier is licensed and experienced, ensuring your vehicle is transported safely even on an expedited schedule.
+
+            </p>
+          </div>
+          <div class="factor-card">
+            <h4>Transparent Pricing
+            </h4>
+            <p> Upfront quotes and our Locked-In Price Promise mean you know the cost before booking, with no hidden fees.
+
+            </p>
+          </div>
+          <div class="factor-card mb-0">
+            <h4>Nationwide Fast Service
+            </h4>
+            <p> Expedited auto transport is available across the United States, providing reliable service for local and long-distance moves.
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= 
+            Home FAQ
+      =========================  -->
+  <section id="homeFaq" class="pt-90 pb-90">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="heading text-center mb-30">
+            <h2 class="heading__title">Frequently Asked Questions</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="faq-visual">
+            <div class="faq-visual__content">
+              <h3 class="faq-visual__title">What is expedited auto transport?</h3>
+              <p class="faq-visual__phone">Expedited transport is a fast-track service for urgent shipments, ensuring your vehicle is delivered quicker than standard options.</p>
+              <a href="instant-quote.html" class="btn btn__secondary">Get a Quote</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div id="accordion">
+            <div class="accordion-item">
+              <div class="accordion__item-header" data-toggle="collapse" data-target="#collapse1">
+                <a class="accordion__item-title" href="#">How much faster is expedited shipping?</a>
+              </div><!-- /.accordion-item-header -->
+              <div id="collapse1" class="collapse" data-parent="#accordion">
+                <div class="accordion__item-body">
+                  <p> Expedited shipments can arrive several days faster than standard transport, depending on distance and carrier availability. Pine Carrier prioritizes your vehicle for minimal transit time.</p>
+                </div><!-- /.accordion-item-body -->
+              </div>
+            </div><!-- /.accordion-item -->
+            <div class="accordion-item">
+              <div class="accordion__item-header" data-toggle="collapse" data-target="#collapse2">
+                <a class="accordion__item-title" href="#">Are expedited shipments more expensive?</a>
+              </div><!-- /.accordion-item-header -->
+              <div id="collapse2" class="collapse" data-parent="#accordion">
+                <div class="accordion__item-body">
+                  <p> Yes, costs are higher due to priority handling, faster routing, and limited carrier availability. Pine Carrier provides clear, upfront quotes for planning.</p>
+                </div><!-- /.accordion-item-body -->
+              </div>
+            </div><!-- /.accordion-item -->
+            <div class="accordion-item">
+              <div class="accordion__item-header opened" data-toggle="collapse" data-target="#collapse3">
+                <a class="accordion__item-title" href="#"> Can I ship any type of vehicle using expedited transport?</a>
+              </div><!-- /.accordion-item-header -->
+              <div id="collapse3" class="collapse show" data-parent="#accordion">
+                <div class="accordion__item-body">
+                  <p> Yes. Cars, trucks, SUVs, and motorcycles can all be shipped using our expedited service, with careful handling for every vehicle type.</p>
+                </div><!-- /.accordion-item-body -->
+              </div>
+            </div><!-- /.accordion-item -->
+            <div class="accordion-item">
+              <div class="accordion__item-header" data-toggle="collapse" data-target="#collapse4">
+                <a class="accordion__item-title" href="#">How do I schedule expedited transport?</a>
+              </div><!-- /.accordion-item-header -->
+              <div id="collapse4" class="collapse" data-parent="#accordion">
+                <div class="accordion__item-body">
+                  <p> Request a quote online or contact Pine Carrier. Our advisors coordinate priority pickup and delivery to fit your time-sensitive needs.</p>
+                </div><!-- /.accordion-item-body -->
+              </div>
+            </div><!-- /.accordion-item -->
+            <div class="accordion-item">
+              <div class="accordion__item-header" data-toggle="collapse" data-target="#collapse5">
+                <a class="accordion__item-title" href="#">Is my vehicle insured during expedited shipping?</a>
+              </div><!-- /.accordion-item-header -->
+              <div id="collapse5" class="collapse" data-parent="#accordion">
+                <div class="accordion__item-body">
+                  <p> Yes. All shipments are covered by carrier insurance, with additional contingent coverage from Pine Carrier for extra protection during expedited transport.</p>
+                </div><!-- /.accordion-item-body -->
+              </div>
+            </div><!-- /.accordion-item -->
+            <div class="accordion-item">
+              <div class="accordion__item-header" data-toggle="collapse" data-target="#collapse6">
+                <a class="accordion__item-title" href="#">What are my payment options?</a>
+              </div><!-- /.accordion-item-header -->
+              <div id="collapse6" class="collapse" data-parent="#accordion">
+                <div class="accordion__item-body">
+                  <p>With any financial product that you buy, it is important that you know you are getting the best
+                    advice from a reputable company as often you will have to provide sensitive information online or
+                    over the internet.</p>
+                </div><!-- /.accordion-item-body -->
+              </div>
+            </div><!-- /.accordion-item -->
+            <div class="accordion-item">
+              <div class="accordion__item-header" data-toggle="collapse" data-target="#collapse7">
+                <a class="accordion__item-title" href="#">How does the free trial work?</a>
+              </div><!-- /.accordion-item-header -->
+              <div id="collapse7" class="collapse" data-parent="#accordion">
+                <div class="accordion__item-body">
+                  <p>With any financial product that you buy, it is important that you know you are getting the best
+                    advice from a reputable company as often you will have to provide sensitive information online or
+                    over the internet.</p>
+                </div><!-- /.accordion-item-body -->
+              </div>
+            </div><!-- /.accordion-item -->
+            <div class="accordion-item">
+              <div class="accordion__item-header" data-toggle="collapse" data-target="#collapse8">
+                <a class="accordion__item-title" href="#">What Payment Methods Are Available?</a>
+              </div><!-- /.accordion-item-header -->
+              <div id="collapse8" class="collapse" data-parent="#accordion">
+                <div class="accordion__item-body">
+                  <p>With any financial product that you buy, it is important that you know you are getting the best
+                    advice from a reputable company as often you will have to provide sensitive information online or
+                    over the internet.</p>
+                </div><!-- /.accordion-item-body -->
+              </div>
+            </div><!-- /.accordion-item -->
+
+          </div><!-- / #accordion -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= 
+            Testimonial #1
+    =========================  -->
+  <section id="testimonial" class="testimonial testimonial-1 text-center pt-80 pb-70">
+    <div class="bg-img"><img src="assets/images/backgrounds/2.png" alt="background"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+          <div class="heading mb-50">
+            <span class="heading__subtitle">What Peoples Say!</span>
+            <h2 class="heading__title">Testimonials</h2>
+          </div><!-- /.heading -->
+        </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-10 offset-lg-1">
+          <div class="carousel owl-carousel carousel-arrows carousel-dots" data-slide="1" data-slide-md="1"
+            data-slide-sm="1" data-autoplay="true" data-nav="true" data-dots="true" data-space="0" data-loop="true"
+            data-speed="800">
+            <!-- Testimonial #1 -->
+            <div class=" testimonial-item">
+              <div class="testimonial__thumb">
+                <img src="assets/images/testimonials/thumbs/1.jpg" alt="author thumb">
+              </div><!-- /.testimonial-thumb -->
+              <div class="testimonial__content">
+                <p class="testimonial__desc">They are the best of the best, and expertly trained team members who take
+                  the extra step and go the extra mile, all to fulfill our dedicated promise to deliver innovative and
+                  dynamic solutions to our customers to fit the needs of a rapidly changing global environment.</p>
+              </div><!-- /.testimonial-content -->
+              <div class="testimonial__meta">
+                <img src="assets/images/testimonials/signature.png" alt="signature">
+                <p class="testimonial__meta-desc">The Move Inc</p>
+              </div><!-- /.testimonial-meta -->
+            </div><!-- /. testimonial-item -->
+            <!-- Testimonial #2 -->
+            <div class=" testimonial-item">
+              <div class="testimonial__thumb">
+                <img src="assets/images/testimonials/thumbs/1.jpg" alt="author thumb">
+              </div><!-- /.testimonial-thumb -->
+              <div class="testimonial__content">
+                <p class="testimonial__desc">Logisti team is the best of the best, and expertly trained team members
+                  who take the extra step and go the extra mile, all to fulfill our dedicated promise to deliver
+                  innovative and dynamic solutions to our customers to fit the needs of a rapidly changing global
+                  environment.</p>
+              </div><!-- /.testimonial-content -->
+              <div class="testimonial__meta">
+                <img src="assets/images/testimonials/signature.png" alt="signature">
+                <p class="testimonial__meta-desc">The Move Inc</p>
+              </div><!-- /.testimonial-meta -->
+            </div><!-- /. testimonial-item -->
+          </div>
+        </div><!-- /.col-lg-12 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /.testimonial1 -->
+
+  <!-- =====================
+       Clients 1
+    ======================== -->
+  <section id="clients1" class="clients clients-1 border-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="carousel owl-carousel" data-slide="6" data-slide-md="4" data-slide-sm="2" data-autoplay="true"
+            data-nav="false" data-dots="false" data-space="20" data-loop="true" data-speed="700">
+            <div class="client">
+              <a href="#"><img src="assets/images/logo-1.png" alt="client"></a>
+            </div><!-- /.client -->
+            <div class="client">
+              <a href="#"><img src="assets/images/logo-2.png" alt="client"></a>
+            </div><!-- /.client -->
+            <div class="client">
+              <a href="#"><img src="assets/images/logo-3.png" alt="client"></a>
+            </div><!-- /.client -->
+            <div class="client">
+              <a href="#"><img src="assets/images/logo-4.avif" alt="client"></a>
+            </div><!-- /.client -->
+            <div class="client">
+              <a href="#"><img src="assets/images/logo-5.png" alt="client"></a>
+            </div><!-- /.client -->
+            <div class="client">
+              <a href="#"><img src="assets/images/logo-6.png" alt="client"></a>
+            </div><!-- /.client -->
+            <div class="client">
+              <a href="#"><img src="assets/images/logo-7.avif" alt="client"></a>
+            </div><!-- /.client -->
+            <div class="client">
+              <a href="#"><img src="assets/images/logo-8.png" alt="client"></a>
+            </div><!-- /.client -->
+          </div><!-- /.carousel -->
+        </div><!-- /.col-lg-12 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /.clients 1 -->
+
+  <!-- ========================
+            Footer
+          ========================== -->
+      <div id="site-footer"></div>
+    <script>
+      (function () {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "assets/includes/footer.html", false);
+        xhr.send(null);
+        if (xhr.status === 200 || xhr.status === 0) {
+          document.getElementById("site-footer").innerHTML = xhr.responseText;
+        }
+      })();
+    </script>
+  </div><!-- /.wrapper -->
+
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+

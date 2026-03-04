@@ -1,0 +1,2378 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description"
+    content="Pine Carrier offers safe, affordable car shipping in the U.S. Trusted carriers, clear pricing, and reliable support from booking to delivery.">
+  <link href="assets/images/favicon/favicon.png" rel="icon">
+  <title>Nationwide Car Shipping Services | Pine Carrier</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:400,500,700%7cPoppins:400,600,700&display=swap">
+  <link rel="stylesheet" href="assets/css/libraries.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    #fancyboxLayout1 {
+      background: #f0f2f6;
+    }
+
+    #fancyboxLayout1 .state-card {
+      background: #e2e5ea;
+      border-radius: 4px;
+      padding: 18px 18px 20px;
+      margin-bottom: 28px;
+      min-height: 100%;
+    }
+
+    #fancyboxLayout1 .state-card__img {
+      width: 100%;
+      height: 122px;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    #fancyboxLayout1 .state-card__title {
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 400;
+      text-align: center;
+      margin: 0 0 12px;
+      color: #0b1220;
+    }
+
+    #fancyboxLayout1 .state-card__desc {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.45;
+      color: #0b1220;
+      text-align: center;
+    }
+
+    #homeFaq {
+      background: #f7f7f7;
+    }
+
+    #homeFaq .heading__title {
+      margin-bottom: 35px;
+    }
+
+    #homeFaq .faq-visual {
+      position: relative;
+      min-height: 780px;
+      border-radius: 12px;
+      overflow: hidden;
+      background: url("assets/images/faq.webp") center center / cover no-repeat;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    #homeFaq .faq-visual:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(240, 242, 246, 0.62);
+    }
+
+    #homeFaq .faq-visual__content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 76px 35px 30px;
+    }
+
+    #homeFaq .faq-visual__title {
+      font-size: 30px;
+      line-height: 1.16;
+      margin-bottom: 20px;
+      color: #101010;
+    }
+
+    #homeFaq .faq-visual__phone {
+      font-size: 20px;
+      line-height: 1.35;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 26px;
+    }
+
+    #homeFaq .faq-visual__phone span {
+      color: #005caf;
+    }
+
+    #homeFaq .faq-visual .btn {
+      min-width: 190px;
+    }
+
+    #homeFaq .faq-list {
+      padding-top: 18px;
+    }
+
+    #homeFaq .faq-qa-item {
+      border: 1px solid #e6ebf2;
+      border-radius: 14px;
+      background: #ffffff;
+      margin-bottom: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(16, 24, 40, 0.05);
+    }
+
+    #homeFaq .faq-qa-item .collapse,
+    #homeFaq .faq-qa-item .collapsing {
+      transition: height 0.42s ease;
+    }
+
+    #homeFaq .faq-qa-header {
+      position: relative;
+      padding: 20px 56px 20px 24px;
+      cursor: pointer;
+      background: #f4f6f9;
+      border-bottom: 1px solid transparent;
+      transition: background-color 0.25s ease, border-color 0.25s ease;
+    }
+
+    #homeFaq .faq-qa-title {
+      display: block;
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.35;
+      color: #121c45;
+      text-decoration: none;
+      transition: color 0.25s ease;
+    }
+
+    #homeFaq .faq-qa-header:after {
+      content: "+";
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #aeb6c4;
+      font-size: 26px;
+      line-height: 1;
+      font-weight: 400;
+      transition: color 0.25s ease;
+    }
+
+    #homeFaq .faq-qa-header.opened {
+      background: #ffffff;
+      border-bottom-color: #e6ebf2;
+    }
+
+    #homeFaq .faq-qa-header.opened .faq-qa-title {
+      color: #005caf;
+    }
+
+    #homeFaq .faq-qa-header.opened:after {
+      content: "-";
+      right: 22px;
+      color: #005caf;
+    }
+
+    #homeFaq .faq-qa-body {
+      padding: 16px 24px 18px;
+    }
+
+    #homeFaq .faq-qa-body p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.55;
+      color: #6d7280;
+    }
+
+    @media (max-width: 1199px) {
+      #homeFaq .faq-visual__title {
+        font-size: 34px;
+      }
+
+      #homeFaq .faq-visual__phone {
+        font-size: 26px;
+      }
+
+      #homeFaq .faq-qa-title {
+        font-size: 18px;
+      }
+
+      #homeFaq .faq-qa-body p {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      #homeFaq {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+
+      #homeFaq .faq-visual {
+        min-height: 540px;
+        margin-bottom: 25px;
+      }
+
+      #homeFaq .faq-visual__content {
+        padding-top: 56px;
+      }
+
+      #homeFaq .faq-qa-header {
+        padding: 16px 50px 16px 18px;
+      }
+
+      #homeFaq .faq-qa-body {
+        padding: 0 18px 16px;
+      }
+    }
+
+    #shippingCostInfo {
+      background: #f5f7fa;
+    }
+
+    #shippingCostInfo .info-left {
+      padding-right: 24px;
+    }
+
+    #shippingCostInfo .info-title {
+      font-size: 42px;
+      line-height: 1.12;
+      margin-bottom: 28px;
+      color: #fff;
+    }
+
+    #shippingCostInfo .info-text {
+      font-size: 14px;
+      line-height: 1.55;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    #shippingCostInfo .info-text a {
+      color: #48e3fd;
+    }
+
+    #shippingCostInfo .info-btn {
+      margin-top: 8px;
+      min-width: 260px;
+    }
+
+    #shippingCostInfo .factor-card {
+      background: #ffffff;
+      border: 1px solid #e7ebf1;
+      border-left: 4px solid #62e5fc;
+      border-radius: 6px;
+      padding: 24px 24px 24px 96px;
+      margin-bottom: 16px;
+      position: relative;
+      box-shadow: 0 6px 14px rgba(18, 28, 69, 0.05);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    #shippingCostInfo .factor-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px rgba(18, 28, 69, 0.09);
+      border-color: #dbe2ec;
+    }
+
+    #shippingCostInfo .factor-card i {
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 1px solid #48e3fd;
+      color: #005caf;
+      background: transparent;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+
+    #shippingCostInfo .factor-card h4 {
+      font-size: 19px;
+      line-height: 1.2;
+      margin-bottom: 6px;
+      color: #121c45;
+    }
+
+    #shippingCostInfo .factor-card p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.52;
+      color: #4f5565;
+    }
+
+    @media (max-width: 1199px) {
+      #shippingCostInfo .info-title {
+        font-size: 40px;
+      }
+
+      #shippingCostInfo .info-text,
+      #shippingCostInfo .factor-card p {
+        font-size: 18px;
+      }
+
+      #shippingCostInfo .factor-card h4 {
+        font-size: 30px;
+      }
+    }
+
+    @media (min-width: 992px) {
+
+      #shippingCostInfo,
+      #shippingCostInfo .container,
+      #shippingCostInfo .row {
+        overflow: visible;
+      }
+
+      #shippingCostInfo .shipping-sticky-col {
+        align-self: flex-start;
+      }
+
+      #shippingCostInfo .shipping-sticky-col .info-left {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 120px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      #shippingCostInfo .info-left {
+        padding-right: 0;
+        margin-bottom: 24px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      #shippingCostInfo {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+
+      #shippingCostInfo .info-title {
+        font-size: 14px;
+      }
+
+      #shippingCostInfo .info-text,
+      #shippingCostInfo .factor-card p {
+        font-size: 14px;
+      }
+
+      #shippingCostInfo .factor-card {
+        padding: 18px 16px 18px 74px;
+      }
+
+      #shippingCostInfo .factor-card i {
+        top: 18px;
+        left: 16px;
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+      }
+
+      #shippingCostInfo .factor-card h4 {
+        font-size: 24px;
+      }
+    }
+
+    #quoteWizardModal .modal-dialog {
+      max-width: 980px;
+    }
+
+    #quoteWizardModal .modal-content {
+      border: 0;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    #quoteWizardModal .modal-header {
+      border-bottom: 1px solid #edf1f6;
+      padding: 14px 20px;
+    }
+
+    #quoteWizardModal .modal-title {
+      font-size: 20px;
+      color: #121c45;
+      margin: 0;
+    }
+
+    #quoteWizardModal .modal-body {
+      padding: 0;
+      background: #ffffff;
+      overflow: hidden;
+    }
+
+    #quoteWizardModal .quote-modal-grid {
+      display: flex;
+      min-height: 620px;
+      max-height: calc(100vh - 140px);
+    }
+
+    #quoteWizardModal .quote-modal-image {
+      width: 42%;
+      position: relative;
+      background: url("assets/images/logistic_header.jpg") center center / cover no-repeat;
+    }
+
+    #quoteWizardModal .quote-modal-image:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(18, 28, 69, 0.45);
+    }
+
+    #quoteWizardModal .quote-modal-form-panel {
+      width: 58%;
+      overflow-y: auto;
+      background: #ffffff;
+    }
+
+    #quoteWizardModal .quote-wizard-wrap {
+      margin: 0;
+      border: 0;
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    @media (max-width: 991px) {
+      #quoteWizardModal .quote-modal-grid {
+        display: block;
+        max-height: calc(100vh - 130px);
+      }
+
+      #quoteWizardModal .quote-modal-image {
+        width: 100%;
+        height: 210px;
+      }
+
+      #quoteWizardModal .quote-modal-form-panel {
+        width: 100%;
+        max-height: calc(100vh - 340px);
+      }
+    }
+
+    @media (min-width: 992px) {
+      .navbar .for-individuals-menu {
+        width: min(900px, calc(100vw - 32px));
+        max-width: none;
+        padding: 22px 20px;
+        left: auto;
+        right: 0;
+        transform: none;
+      }
+
+      .navbar .for-individuals-menu .fi-grid {
+        display: flex;
+        gap: 0;
+      }
+
+      .navbar .for-individuals-menu .fi-col {
+        width: 33.333%;
+        padding: 0 20px;
+      }
+
+      .navbar .for-individuals-menu .fi-col+.fi-col {
+        border-left: 1px solid #e4e8ef;
+      }
+
+      .navbar .for-individuals-menu .fi-title {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+        margin: 0 0 16px;
+      }
+
+      .navbar .for-individuals-menu .fi-empty-title {
+        opacity: 0;
+      }
+
+      .navbar .for-individuals-menu .fi-link {
+        display: block;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        color: #000;
+        text-transform: capitalize;
+        position: relative;
+        border-bottom: 1px solid #eaeaea;
+        margin-bottom: 2px;
+      }
+
+      .navbar .for-individuals-menu .fi-link:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 0;
+        height: 1px;
+        background-color: #005caf;
+        transition: all 0.8s linear;
+      }
+
+      .navbar .for-individuals-menu .fi-link:hover {
+        color: #005caf;
+      }
+
+      .navbar .for-individuals-menu .fi-link:hover:after {
+        width: 100%;
+      }
+
+      .navbar .for-individuals-menu .fi-item:last-child .fi-link {
+        border-bottom: none;
+      }
+
+      .navbar .for-individuals-menu .fi-sub {
+        display: block;
+        font-size: 14px;
+        line-height: 1.25;
+        color: #8a92a3;
+        margin-bottom: 16px;
+      }
+
+      .navbar .for-individuals-menu .fi-item:last-child .fi-sub {
+        margin-bottom: 0;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .navbar .for-individuals-menu .fi-grid {
+        display: block;
+      }
+
+      .navbar .for-individuals-menu .fi-col {
+        width: 100%;
+        padding: 0;
+      }
+
+      .navbar .for-individuals-menu .fi-col+.fi-col {
+        border-left: 0;
+        border-top: 1px solid #eef1f5;
+        margin-top: 10px;
+        padding-top: 10px;
+      }
+
+      .navbar .for-individuals-menu .fi-title {
+        font-size: 18px;
+        margin: 0 0 8px;
+        color: #747b88;
+      }
+
+      .navbar .for-individuals-menu .fi-empty-title {
+        display: none;
+      }
+
+      .navbar .for-individuals-menu .fi-link {
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25;
+        color: #9b9b9b;
+        text-transform: capitalize;
+        position: relative;
+        border-bottom: 1px solid #eaeaea;
+        margin-bottom: 2px;
+      }
+
+      .navbar .for-individuals-menu .fi-link:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 0;
+        height: 1px;
+        background-color: #005caf;
+        transition: all 0.8s linear;
+      }
+
+      .navbar .for-individuals-menu .fi-link:hover:after {
+        width: 100%;
+      }
+
+      .navbar .for-individuals-menu .fi-item:last-child .fi-link {
+        border-bottom: none;
+      }
+
+      .navbar .for-individuals-menu .fi-sub {
+        display: block;
+        font-size: 13px;
+        line-height: 1.25;
+        color: #8a92a3;
+        margin-bottom: 10px;
+      }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .navbar .for-individuals-menu {
+        width: calc(100vw - 32px);
+        max-width: calc(100vw - 32px);
+        padding: 18px 14px;
+        left: auto;
+        right: 0;
+        transform: none;
+      }
+
+      .navbar .for-individuals-menu .fi-col {
+        padding: 0 12px;
+      }
+
+      .navbar .for-individuals-menu .fi-title {
+        font-size: 15px;
+        margin-bottom: 12px;
+      }
+
+      .navbar .for-individuals-menu .fi-link {
+        font-size: 13px;
+        line-height: 24px;
+      }
+
+      .navbar .for-individuals-menu .fi-sub {
+        font-size: 12px;
+        margin-bottom: 12px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .navbar .for-individuals-menu {
+        position: static;
+        left: 0 !important;
+        right: auto !important;
+        transform: none !important;
+        width: 100%;
+        max-height: 62vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 10px 14px;
+      }
+
+      .navbar .for-individuals-menu .fi-item {
+        margin-bottom: 4px;
+      }
+
+      .navbar .for-individuals-menu .fi-sub {
+        padding-bottom: 8px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .navbar .nav__item--individuals {
+        position: static;
+      }
+
+      .navbar .nav__item--individuals .for-individuals-menu {
+        left: 15px !important;
+        right: 15px !important;
+        width: auto !important;
+        max-width: none !important;
+        transform: none !important;
+      }
+    }
+
+    /* Force transparent home header on live hosts that inject/reorder scripts */
+    body.home-page #site-header .sticky-navbar:not(.fixed-navbar) {
+      background-color: transparent !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+    }
+
+    @media (min-width: 992px) {
+
+      body.home-page #site-header .sticky-navbar:not(.fixed-navbar) .navbar-nav>.nav__item>.nav__item-link,
+      body.home-page #site-header .sticky-navbar:not(.fixed-navbar) .module__btn {
+        color: #ffffff !important;
+      }
+
+      body.home-page #site-header .sticky-navbar:not(.fixed-navbar) .navbar-nav>.nav__item>.nav__item-link:before {
+        background-color: #ffffff !important;
+      }
+    }
+
+    body.home-page #site-header .sticky-navbar:not(.fixed-navbar) .navbar-toggler .menu-lines:before,
+    body.home-page #site-header .sticky-navbar:not(.fixed-navbar) .navbar-toggler .menu-lines:after,
+    body.home-page #site-header .sticky-navbar:not(.fixed-navbar) .navbar-toggler .menu-lines span {
+      background-color: #ffffff !important;
+    }
+
+    :root {
+      --theme-primary: #005caf;
+      --theme-accent: #ad3600;
+      --theme-dark: #1b1a1a;
+      --theme-muted: #666666;
+      --theme-border: #eaeaea;
+      --card-shadow: 0px 12px 30px rgba(0, 92, 175, 0.08);
+    }
+
+
+    .royal-transport-section {
+      font-family: "Roboto", sans-serif;
+      padding: 80px 0;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .stats-wrapper {
+      background: linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
+      border: 1px solid var(--theme-border);
+      border-radius: 16px;
+      padding: 42px 24px;
+      box-shadow: var(--card-shadow);
+    }
+
+    .main-title {
+      font-family: "Roboto", sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--theme-dark);
+      margin-bottom: 8px;
+    }
+
+    .main-subtitle {
+      color: var(--theme-muted);
+      font-size: 16px;
+      margin-bottom: 45px;
+    }
+
+
+    .stats-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-bottom: 100px;
+      padding: 0 20px;
+    }
+
+    .stat-box {
+      border: 1px solid var(--theme-border);
+      border-radius: 12px;
+      padding: 40px 20px;
+      background: #fff;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .stat-box:hover {
+      transform: translateY(-4px);
+      border-color: var(--theme-primary);
+      box-shadow: 0 12px 25px rgba(0, 92, 175, 0.15);
+    }
+
+    .icon-wrap {
+      width: 82px;
+      height: 82px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      background: #eef6ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon-wrap img {
+      width: 42px;
+      height: auto;
+      margin-bottom: 0;
+    }
+
+    .stat-number {
+      font-size: 34px;
+      font-weight: 700;
+      color: var(--theme-primary);
+      margin: 10px 0;
+    }
+
+    .stat-label {
+      font-size: 18px;
+      font-weight: 600;
+      color: #000;
+    }
+
+
+    .testimonial-section {
+      padding-top: 50px;
+    }
+
+
+    .testimonial-slider {
+      padding: 60px 20px 40px;
+    }
+
+    .testimonial-card {
+      background: #fff;
+      border-radius: 25px;
+      padding: 60px 30px 40px;
+      box-shadow: var(--card-shadow);
+      border: 1px solid #f2f2f2;
+      position: relative;
+      text-align: left;
+      min-height: 220px;
+    }
+
+
+    .icon-circle {
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      z-index: 5;
+    }
+
+    .icon-circle img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+    .stars {
+      color: var(--theme-primary);
+      font-size: 20px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .star-gray {
+      color: #e0e0e0;
+    }
+
+    .testi-text {
+      font-size: 14.5px;
+      color: #555;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+
+    .testimonial-slider .owl-stage-outer {
+      padding-top: 35px;
+    }
+
+    .testimonial-slider .owl-item {
+      padding: 0 12px;
+    }
+
+    .testimonial-slider .owl-dots {
+      margin-top: 25px !important;
+    }
+
+    .testimonial-slider .owl-dot span {
+      background: #ffebd2 !important;
+    }
+
+    .testimonial-slider .owl-dot.active span {
+      background: var(--theme-primary) !important;
+    }
+
+
+    @media (max-width: 768px) {
+      .testimonial-card {
+        margin: 0 4px;
+      }
+
+      .main-title {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body class="home-page">
+  <div class="wrapper">
+    <!-- =========================
+        Header
+    =========================== -->
+    <div id="site-header" class="header header-transparent"></div>
+    <script>
+      (function () {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "assets/includes/header.html", false);
+        xhr.send(null);
+        if (xhr.status === 200 || xhr.status === 0) {
+          document.getElementById("site-header").innerHTML = xhr.responseText;
+        }
+      })();
+
+      (function () {
+        if (!document.body.classList.contains("home-page")) return;
+
+        function syncHomeHeader() {
+          var nav = document.querySelector("#site-header .sticky-navbar");
+          if (!nav) return;
+
+          var atTop = window.pageYOffset <= 80;
+          if (atTop) {
+            nav.style.backgroundColor = "transparent";
+            nav.style.borderBottom = "1px solid rgba(255, 255, 255, 0.15)";
+          } else {
+            nav.style.backgroundColor = "";
+            nav.style.borderBottom = "";
+          }
+        }
+
+        window.addEventListener("scroll", syncHomeHeader, { passive: true });
+        window.addEventListener("load", syncHomeHeader);
+        setTimeout(syncHomeHeader, 0);
+        setTimeout(syncHomeHeader, 250);
+      })();
+    </script>
+
+    <!-- ============================
+        Slider
+    ============================== -->
+    <section id="slider1" class="slider slider-1">
+      <div class="owl-carousel thumbs-carousel carousel-arrows" data-slider-id="slider1" data-dots="false"
+        data-autoplay="true" data-nav="true" data-transition="fade" data-animate-out="fadeOut" data-animate-in="fadeIn">
+        <div class="slide-item align-v-h bg-overlay">
+          <div class="bg-img"><img src="assets/images/4.webp" alt="slide img"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-8">
+                <div class="slide__content">
+                  <h2 class="slide__title">Nationwide Vehicle Shipping Made Easy and Reliable</h2>
+                  <p class="slide__desc">
+                    Pine Carrier helps you move cars, motorcycles, trucks, and more anywhere in the U.S. We connect you
+                    with trusted carriers, offer honest pricing, and provide door-to-door delivery with dedicated
+                    advisors who support you from booking to final drop-off.
+                  </p>
+                  <a href="#" class="btn btn__white">About Us</a>
+                </div><!-- /.slide-content -->
+              </div><!-- /.col-lg-8 -->
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.slide-item -->
+        <div class="slide-item align-v-h bg-overlay">
+          <div class="bg-img"><img src="assets/images/sliders/3.webp" alt="slide img"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-8">
+                <div class="slide__content">
+                  <h2 class="slide__title">Nationwide Vehicle Shipping Made Easy and Reliable</h2>
+                  <p class="slide__desc">
+                    Pine Carrier helps you move cars, motorcycles, trucks, and more anywhere in the U.S. We connect you
+                    with trusted carriers, offer honest pricing, and provide door-to-door delivery with dedicated
+                    advisors who support you from booking to final drop-off.
+                  </p>
+                  <a href="#" class="btn btn__white mr-30">About Us</a>
+                  <a href="#" class="btn btn__primary btn__hover2">Our Services</a>
+                </div><!-- /.slide-content -->
+              </div><!-- /.col-lg-8 -->
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.slide-item -->
+        <div class="slide-item align-v-h bg-overlay">
+          <div class="bg-img"><img src="assets/images/sliders/4.webp" alt="slide img"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-8">
+                <div class="slide__content">
+                  <h2 class="slide__title">Nationwide Vehicle Shipping Made Easy and Reliable</h2>
+                  <p class="slide__desc">
+                    Pine Carrier helps you move cars, motorcycles, trucks, and more anywhere in the U.S. We connect you
+                    with trusted carriers, offer honest pricing, and provide door-to-door delivery with dedicated
+                    advisors who support you from booking to final drop-off.
+                  </p>
+                  <a href="#" class="btn btn__primary btn__hover2 mr-30">Our Services</a>
+                  <a href="#" class="btn btn__white">About Us</a>
+                </div><!-- /.slide-content -->
+              </div><!-- /.col-lg-8 -->
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.slide-item -->
+        <div class="slide-item align-v-h bg-overlay">
+          <div class="bg-img"><img src="assets/images/sliders/1.webp" alt="slide img"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-8">
+                <div class="slide__content">
+                  <h2 class="slide__title">Nationwide Vehicle Shipping Made Easy and Reliable</h2>
+                  <p class="slide__desc">
+                    Pine Carrier helps you move cars, motorcycles, trucks, and more anywhere in the U.S. We connect you
+                    with trusted carriers, offer honest pricing, and provide door-to-door delivery with dedicated
+                    advisors who support you from booking to final drop-off.
+                  </p>
+                  <a href="#" class="btn btn__white mr-30">Get Started</a>
+                  <a href="#" class="btn btn__primary btn__hover2">Our Services</a>
+                </div><!-- /.slide-content -->
+              </div><!-- /.col-lg-8 -->
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.slide-item -->
+      </div><!-- /.carousel -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 d-none d-lg-block">
+            <div class="owl-thumbs thumbs-dots" data-slider-id="slider1">
+              <button class="owl-thumb-item">
+                <i class="icon-forklift-1"></i>
+                <span>Nationwide<br> Auto Transport</span>
+              </button>
+              <button class="owl-thumb-item">
+                <i class="icon-air-freight"></i>
+                <span>Open Carrier<br> Shipping</span>
+              </button>
+              <button class="owl-thumb-item">
+                <i class="icon-cargo-ship"></i>
+                <span>Expedited Vehicle<br> Delivery</span>
+              </button>
+              <button class="owl-thumb-item">
+                <i class="icon-truck"></i>
+                <span>Door-to-Door<br> Shipping</span>
+              </button>
+            </div><!-- /.owl-thumbs -->
+          </div><!-- /.col-lg-12 -->
+          <div class="col-sm-12 col-md-12 col-lg-12 d-none d-lg-block">
+            <a class="btn btn__video btn__video-lg popup-video" href="/assets/images/video/vid-1.mp4">
+              <div class="video__player">
+                <span class="video__player-animation"></span>
+                <span class="video__player-animation video__player-animation-2"></span>
+                <i class="fa fa-play"></i>
+              </div>
+              <span class="video__btn-title">Looking to Transport a Vehicle</span>
+            </a><!-- /.btn__video-->
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.slider -->
+
+    <!-- ========================
+        Services
+    =========================== -->
+    <section id="services" class="services pb-90">
+      <div class="container">
+        <div class="row heading heading-2 mb-40">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <span class="heading__subtitle">Built For Every Move</span>
+          </div><!-- /.col-lg-12 -->
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <h2 class="heading__title">Our Most-Used Shipping Services</h2>
+          </div><!-- /.col-lg-5 -->
+          <div class="col-sm-12 col-md-12 col-lg-6 ">
+            <p class="heading__desc">Our global logistics expertise, advanced supply chain technology & customized
+              logistics solutions will help you analyze, develop and implement successful supply chain management
+              strategies.</p>
+          </div>
+        </div><!-- /.row -->
+        <div class="row text-center">
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <div class="service-item">
+              <div class="service__icon"><i class="icon-cargo-ship"></i></div>
+              <div class="service__content">
+                <h4 class="service__title">Door-to-door car shipping</h4>
+                <p class="service__desc">Pine Carrier makes car shipping simple with door-to-door service across the
+                  U.S. Your vehicle is picked up and delivered as close to your chosen locations as safely possible. We
+                  work with trusted carriers and keep you informed at every step, from booking to final delivery.</p>
+                <a href="door-to-door.html" class="btn btn__white">
+                  <span>Read More</span><i class="icon-arrow-right"></i>
+                </a>
+              </div>
+            </div><!-- /.service-item -->
+          </div><!-- /.col-lg-4 -->
+
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <div class="service-item">
+              <div class="service__icon"><i class="icon-truck"></i></div>
+              <div class="service__content">
+                <h4 class="service__title">Motorcycle shipping</h4>
+                <p class="service__desc">Pine Carrier offers safe motorcycle shipping for street bikes, cruisers, and
+                  more. We match your bike with carriers experienced in proper handling and secure transport. Whether
+                  moving locally or across states, we help protect your motorcycle and deliver it on time and in good
+                  condition.
+
+                </p>
+                <a href="#" class="btn btn__white">
+                  <span>Read More</span><i class="icon-arrow-right"></i>
+                </a>
+              </div>
+            </div><!-- /.service-item -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <div class="service-item">
+              <div class="service__icon"><i class="icon-truck"></i></div>
+              <div class="service__content">
+                <h4 class="service__title">Military PCS shipping</h4>
+                <p class="service__desc">We proudly support military members during PCS moves. Pine Carrier offers
+                  flexible scheduling, fair pricing, and discounts for active duty and veterans. Our advisors understand
+                  military timelines and help coordinate vehicle shipping smoothly, so you can focus on your relocation
+                  with peace of mind.
+
+                </p>
+                <a href="#" class="btn btn__white">
+                  <span>Read More</span><i class="icon-arrow-right"></i>
+                </a>
+              </div>
+            </div><!-- /.service-item -->
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+            <p class="text__link mb-0">Logistic & Transport Solutions Saves Your Time <a href="#">Find out how auto
+                transport works</a>
+            </p>
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.Services -->
+
+    <!-- ======================
+           banner 1
+      ========================= -->
+    <section id="banner1" class="banner banner-1 p-0 bg-gray">
+      <div class="container-fluid col-padding-0">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="inner-padding">
+              <div class="heading heading-3 mb-30">
+                <!-- <i class="icon-tag"></i> -->
+                <span class="heading__subtitle">How do I book vehicle transport services?</span>
+                <h2 class="heading__title">Pine Carrier’s guide to fast, simple, and secure vehicle shipping
+                  </p>
+              </div><!-- /.heading -->
+              <a href="instant-quote.html" class="btn btn__primary">Get an instant quote</a>
+            </div>
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-12 col-md-12 col-lg-6 bg-overlay  background-banner">
+            <div class="bg-img"><img src="assets/images/logistic_header.webp" alt="background"></div>
+            <div class="skills skills-panel">
+              <div class="heading mb-30">
+                <h2 class="heading__title">
+                  Our vehicle shipping steps:
+                </h2>
+              </div><!-- /.heading -->
+              <!-- progress 1 -->
+              <div class="progress-item">
+                <h6 class="progress__title">Step 1</h6>
+                <p>Get a quote and place your order
+                </p>
+                <div class="border-top">
+                </div><!-- /.progress -->
+              </div><!-- /.progress-item  -->
+              <!-- progress 2 -->
+              <div class="progress-item">
+                <h6 class="progress__title">Step 2</h6>
+                <p>We pick up your vehicle
+                </p>
+                <div class="border-top">
+                </div><!-- /.progress -->
+              </div><!-- /.progress-item  -->
+              <!-- progress 3 -->
+              <div class="progress-item">
+                <h6 class="progress__title">Step 3</h6>
+                <p>Your vehicle is delivered
+                </p>
+                <div class="border-top">
+                </div><!-- /.progress -->
+              </div><!-- /.progress-item  -->
+            </div><!-- /.skills -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.banner 1 -->
+
+
+    <!-- =========================== 
+      fancybox Carousel
+    ============================= -->
+    <section id="fancyboxCarousel"
+      class="fancybox-layout4 fancybox-carousel bg-overlay bg-overlay-gradient-secondary-2">
+      <div class="bg-img"><img src="assets/images/backgrounds/5.jpg" alt="background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+            <div class="heading text-center mb-40">
+              <span class="heading__subtitle">Why Choose Us
+              </span>
+              <h2 class="heading__title color-white">Why Thousands Trust Pine Carrier for Safe and Reliable Vehicle
+                Shipping Nationwide
+
+              </h2>
+            </div><!-- /.heading -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="carousel owl-carousel carousel-arrows" data-slide="4" data-slide-md="2" data-slide-sm="1"
+              data-autoplay="true" data-nav="true" data-dots="false" data-space="20" data-loop="true" data-speed="800">
+              <div class="fancybox-item">
+                <div class="fancybox__icon"><i class="fa fa-users"></i></div>
+                <div class="fancybox__content">
+                  <h4 class="fancybox__title">Large Trusted Carrier Network</h4>
+                  <p class="fancybox__desc">We work with a nationwide network of over 30,000 carefully reviewed
+                    carriers. This allows us to find the right match for your vehicle, route, and schedule without
+                    delays.
+                  </p>
+                </div>
+              </div>
+
+              <div class="fancybox-item">
+                <div class="fancybox__icon"><i class="fa fa-user-circle-o"></i></div>
+                <div class="fancybox__content">
+                  <h4 class="fancybox__title">365 Days Support</h4>
+                  <p class="fancybox__desc">Our team is available most days of the year with extended support hours. You
+                    can reach a real person for updates, questions, or help at any stage.
+                  </p>
+                </div>
+              </div>
+
+              <div class="fancybox-item">
+                <div class="fancybox__icon"><i class="fa fa-comments-o"></i></div>
+                <div class="fancybox__content">
+                  <h4 class="fancybox__title">Locked-In Price Promise</h4>
+                  <p class="fancybox__desc">Your quoted price stays the same for 30 days. If carrier rates increase
+                    after booking, Pine Carrier covers the difference so you never face surprise charges.
+                  </p>
+                </div>
+              </div>
+
+              <div class="fancybox-item">
+                <div class="fancybox__icon"><i class="fa fa-star-o"></i></div>
+                <div class="fancybox__content">
+                  <h4 class="fancybox__title">Service Built Around You
+
+                  </h4>
+                  <p class="fancybox__desc">Every shipment is handled based on your needs, vehicle type, and timing. We
+                    take time to understand your situation and offer options that fit best.
+                  </p>
+                </div>
+              </div>
+
+              <div class="fancybox-item">
+                <div class="fancybox__icon"><i class="fa fa-usd"></i></div>
+                <div class="fancybox__content">
+                  <h4 class="fancybox__title">One-on-One Shipping Advisors
+                  </h4>
+                  <p class="fancybox__desc">Each customer works with a dedicated advisor who manages the shipment from
+                    start to finish. You get clear updates, honest answers, and consistent support.
+                  </p>
+                </div>
+              </div>
+
+              <div class="fancybox-item">
+                <div class="fancybox__icon"><i class="fa fa-shield"></i></div>
+                <div class="fancybox__content">
+                  <h4 class="fancybox__title">Proven Industry Experience</h4>
+                  <p class="fancybox__desc">With years of experience and millions of vehicles moved, Pine Carrier has
+                    built a strong reputation for dependable service, fair pricing, and satisfied customers nationwide.
+                  </p>
+                </div>
+              </div>
+
+              <div class="fancybox-item">
+                <div class="fancybox__icon"><i class="fa fa-map-o"></i></div>
+                <div class="fancybox__content">
+                  <h4 class="fancybox__title">No Upfront Payment</h4>
+                  <p class="fancybox__desc">You don’t pay anything upfront when booking. Payment is only required after
+                    a carrier is confirmed and dispatched for your shipment.</p>
+                </div>
+              </div>
+
+              <div class="fancybox-item">
+                <div class="fancybox__icon"><i class="fa fa-clock-o"></i></div>
+                <div class="fancybox__content">
+                  <h4 class="fancybox__title">Strong Insurance Protection</h4>
+                  <p class="fancybox__desc">Your vehicle is protected by carrier cargo insurance, with extra coverage
+                    provided by Pine Carrier. This added layer offers peace of mind during transport.</p>
+                </div>
+              </div>
+            </div><!-- /.carousel -->
+          </div>
+        </div><!-- /.row -->
+      </div>
+    </section>
+
+    <!-- ========================
+        Request Quote Tabs
+    =========================== -->
+    <section id="requestQuoteTabs" class="request-quote request-quote-tabs p-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="request__form">
+              <nav class="nav nav-tabs">
+                <a class="nav__link active" data-toggle="tab" href="#quote">Request A Quote</a>
+                <a class="nav__link" data-toggle="tab" href="#track">Track & Trace</a>
+              </nav>
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="quote">
+                  <div class="request-quote-panel">
+                    <div class="quote-wizard-wrap">
+                      <div class="request__form-body">
+
+                        <!-- Header -->
+                        <div class="qw-header text-center">
+                          <h2 class="qw-title">Request Your Shipping Quote</h2>
+                          <div class="qw-subtitle">
+                            or call at <a href="tel:+12152012020">(307) 218-7132</a>
+                          </div>
+                        </div>
+
+                        <!-- Stepper -->
+                        <div class="qw-stepper" aria-label="Quote Wizard Steps">
+                          <div class="qw-step-line"></div>
+                          <button type="button" class="qw-step-dot is-active" data-step-dot="1"
+                            aria-current="step">1</button>
+                          <button type="button" class="qw-step-dot" data-step-dot="2" disabled>2</button>
+                          <button type="button" class="qw-step-dot" data-step-dot="3" disabled>3</button>
+                        </div>
+
+                        <!-- Form -->
+                        <form id="quoteWizardForm" novalidate>
+                          <!-- STEP 1 -->
+                          <div class="qw-step is-active" data-step="1">
+                            <div class="form-group">
+                              <label class="qw-label">Transport Car From: <span class="qw-req">*</span></label>
+                              <input type="text" name="from_zip" class="form-control qw-input"
+                                placeholder="66019 : Clearview City KS" required />
+                            </div>
+
+                            <div class="form-group">
+                              <label class="qw-label">Transport Car To: <span class="qw-req">*</span></label>
+                              <input type="text" name="to_zip" class="form-control qw-input"
+                                placeholder="66019 : Clearview City KS" required />
+                            </div>
+
+                            <div class="form-group">
+                              <label class="qw-label">Transport type: <span class="qw-req">*</span></label>
+                              <div class="qw-radio-group">
+                                <label class="qw-radio">
+                                  <input type="radio" name="transport_type" value="Open" required />
+                                  <span class="qw-radio-ui"></span>
+                                  <span>Open</span>
+                                </label>
+
+                                <label class="qw-radio">
+                                  <input type="radio" name="transport_type" value="Enclosed" required />
+                                  <span class="qw-radio-ui"></span>
+                                  <span>Enclosed</span>
+                                </label>
+                              </div>
+                            </div>
+
+                            <div class="form-group">
+                              <label class="qw-check">
+                                <input type="checkbox" name="consent" required />
+                                <span class="qw-check-ui"></span>
+                                <span class="qw-check-text">
+                                  By checking this box, you agree to our Terms and Privacy Policy, allowing us to send
+                                  automated sales calls, text messages, and prerecorded voicemails to the provided phone
+                                  number. Your consent is not required for purchasing any items, commodities, or
+                                  services. Message and data rates may apply.
+                                </span>
+                              </label>
+                            </div>
+
+                            <button type="button" class="btn btn__secondary btn__block" data-next>
+                              Next
+                            </button>
+                          </div>
+
+                          <!-- STEP 2 -->
+                          <div class="qw-step" data-step="2">
+                            <div class="form-group form-group-select">
+                              <label class="qw-label">Vehicle type: <span class="qw-req">*</span></label>
+                              <select class="form-control qw-input" name="vehicle_type" required>
+                                <option value="" selected disabled>Select Vehicle type</option>
+                                <option>Car</option>
+                                <option>Truck</option>
+                                <option>Motorcycle</option>
+                                <option>ATV & UTV</option>
+                                <option>Boat</option>
+                                <option>PWC</option>
+                                <option>Snowmobile</option>
+                                <option>RV/Trailer</option>
+                                <option>Commercial Truck</option>
+                                <option>Heavy Equipment</option>
+                                <option>Other</option>
+                              </select>
+                            </div>
+
+                            <div class="form-group form-group-select">
+                              <label class="qw-label">Vehicle year: <span class="qw-req">*</span></label>
+                              <select class="form-control qw-input" name="vehicle_year" required>
+                                <option value="" selected disabled>Select Vehicle year</option>
+                                <!-- JS will populate years -->
+                              </select>
+                            </div>
+
+                            <div class="form-group form-group-select">
+                              <label class="qw-label">Vehicle make: <span class="qw-req">*</span></label>
+                              <select class="form-control qw-input" name="vehicle_make" required>
+                                <option value="" selected disabled>Select Brand</option>
+                                <option>Acura</option>
+                                <option>Alfa Romeo</option>
+                                <option>Aptera</option>
+                                <option>Aston Martin</option>
+                                <option>Audi</option>
+                                <option>Austin</option>
+                                <option>Bentley</option>
+                                <option>BMW</option>
+                                <option>Buick</option>
+                                <option>Cadillac</option>
+                                <option>Chevrolet</option>
+                                <option>Chrysler</option>
+                                <option>Dodge</option>
+                                <option>Ferrari</option>
+                                <option>FIAT</option>
+                                <option>Ford</option>
+                                <option>GMC</option>
+                                <option>Honda</option>
+                                <option>Hyundai</option>
+                                <option>Infiniti</option>
+                                <option>Jaguar</option>
+                                <option>Jeep</option>
+                                <option>Kia</option>
+                                <option>Lamborghini</option>
+                                <option>Land Rover</option>
+                                <option>Lexus</option>
+                                <option>Lincoln</option>
+                                <option>Maserati</option>
+                                <option>Mazda</option>
+                                <option>McLaren</option>
+                                <option>Mercedes-Benz</option>
+                                <option>Mini</option>
+                                <option>Mitsubishi</option>
+                                <option>Nissan</option>
+                                <option>Porsche</option>
+                                <option>Ram</option>
+                                <option>Subaru</option>
+                                <option>Tesla</option>
+                                <option>Toyota</option>
+                                <option>Volkswagen</option>
+                                <option>Volvo</option>
+                              </select>
+                            </div>
+
+                            <div class="form-group">
+                              <label class="qw-label">Vehicle model: <span class="qw-req">*</span></label>
+                              <input type="text" name="vehicle_model" class="form-control qw-input" placeholder=""
+                                required />
+                            </div>
+
+                            <div class="form-group">
+                              <label class="qw-label">Is it running <span class="qw-req">*</span></label>
+                              <div class="qw-radio-group">
+                                <label class="qw-radio">
+                                  <input type="radio" name="is_running" value="Yes" required />
+                                  <span class="qw-radio-ui"></span>
+                                  <span>Yes</span>
+                                </label>
+
+                                <label class="qw-radio">
+                                  <input type="radio" name="is_running" value="No" required />
+                                  <span class="qw-radio-ui"></span>
+                                  <span>No</span>
+                                </label>
+                              </div>
+                            </div>
+
+                            <div class="qw-actions">
+                              <button type="button" class="btn btn__secondary btn__block" data-prev>Previous</button>
+                              <button type="button" class="btn btn__secondary btn__block" data-next>Next</button>
+                            </div>
+                          </div>
+
+                          <!-- STEP 3 -->
+                          <div class="qw-step" data-step="3">
+                            <div class="form-group">
+                              <label class="qw-label">First available date: <span class="qw-req">*</span></label>
+                              <input type="date" name="available_date" class="form-control qw-input" required />
+                            </div>
+
+                            <div class="form-group">
+                              <label class="qw-label">Full Name: <span class="qw-req">*</span></label>
+                              <input type="text" name="full_name" class="form-control qw-input"
+                                placeholder="Enter Full Name" required />
+                            </div>
+
+                            <div class="form-group">
+                              <label class="qw-label">Phone: <span class="qw-req">*</span></label>
+                              <input type="tel" name="phone" class="form-control qw-input" placeholder="(123) 456-7890"
+                                required minlength="7" />
+                            </div>
+
+                            <div class="form-group">
+                              <label class="qw-label">Send a copy of the quote to: <span class="qw-req">*</span></label>
+                              <input type="email" name="email" class="form-control qw-input"
+                                placeholder="Enter your email" required />
+                            </div>
+
+                            <div class="qw-actions">
+                              <button type="button" class="btn btn__secondary btn__block" data-prev>Previous</button>
+                              <button type="submit" class="btn btn__secondary btn__block">submit</button>
+                            </div>
+                          </div>
+                        </form>
+
+                        <!-- THANK YOU -->
+                        <div class="qw-thanks" id="quoteThanks" hidden>
+                          <div class="qw-thanks-icon" aria-hidden="true">
+                            <!-- check icon -->
+                            <svg width="54" height="54" viewBox="0 0 24 24" fill="none">
+                              <path d="M20 6L9 17l-5-5" stroke="#fff" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                          </div>
+                          <h2 class="qw-thanks-title">Thank You</h2>
+                          <p class="qw-thanks-text">We will email your quote and reach you back<br />shortly !</p>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="widget widget-download bg-theme">
+                      <div class="widget__content">
+                        <h5>Industry-Focused Solutions</h5>
+                        <p>Our nationwide and overseas carrier network helps keep shipments on schedule while managing
+                          costs and meeting all transport requirements. Pine Carrier supports both individuals and
+                          businesses with dependable service designed to fit real-world timelines and shipping needs.
+                        </p>
+                        <a href="#" class="btn btn__secondary btn__hover2 btn__block">
+                          <span>Request A Quote</span><i class="icon-arrow-right"></i>
+                        </a>
+                      </div><!-- /.widget__content -->
+                    </div><!-- /.widget-download -->
+                  </div><!-- /.request-quote-panel-->
+                </div><!-- /.tab -->
+                <div class="tab-pane fade" id="track">
+                  <div class="request-quote-panel">
+                    <div class="request__form-body">
+                      <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                          <div class="form-group">
+                            <label>Shipment Type</label>
+                            <div class="form-group form-group-select">
+                              <select class="form-control">
+                                <option>Packaging</option>
+                                <option>Packaging 1</option>
+                                <option>Packaging 2</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div><!-- /.col-lg-12 -->
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                          <div class="form-group">
+                            <label>Tracking Number</label>
+                            <div class="form-group">
+                              <textarea class="form-control"
+                                placeholder="You can enter up to a maximum of 10 airway bill numbers for tracking."></textarea>
+                            </div>
+                          </div>
+                        </div><!-- /.col-lg-12 -->
+                        <div class="col-sm-12 col-md-12 col-lg-12 d-flex flex-wrap">
+                          <div class="form-group input-radio">
+                            <label class="label-radio">Fragile
+                              <input type="radio" name="radioGroup2" checked="">
+                              <span class="radio-indicator"></span>
+                            </label>
+                          </div>
+                          <div class="form-group input-radio">
+                            <label class="label-radio">Express Delivery
+                              <input type="radio" name="radioGroup2">
+                              <span class="radio-indicator"></span>
+                            </label>
+                          </div>
+                          <div class="form-group input-radio">
+                            <label class="label-radio">Insurance
+                              <input type="radio" name="radioGroup2">
+                              <span class="radio-indicator"></span>
+                            </label>
+                          </div>
+                          <div class="form-group input-radio">
+                            <label class="label-radio">Packaging
+                              <input type="radio" name="radioGroup2">
+                              <span class="radio-indicator"></span>
+                            </label>
+                          </div>
+                        </div><!-- /.col-lg-12 -->
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                          <button class="btn btn__secondary btn__block">Track & Trace</button>
+                        </div><!-- /.col-lg-12 -->
+                      </div>
+
+
+                    </div><!-- /.request__form-body -->
+                    <div class="widget widget-download bg-theme">
+                      <div class="widget__content">
+                        <h5>Industry<br>Solutions!</h5>
+                        <p>Our worldwide presence ensures the timeliness, cost efficiency and compliance adherence
+                          required to ensure your production timelines are met.</p>
+                        <a href="#" class="btn btn__secondary btn__hover2 btn__block">
+                          <span>Request A Quote</span><i class="icon-arrow-right"></i>
+                        </a>
+                      </div><!-- /.widget__content -->
+                    </div><!-- /.widget-download -->
+                  </div><!-- /.request-quote-panel-->
+                </div><!-- /.tab -->
+              </div><!-- /.tab-content -->
+            </div><!-- /.request-form -->
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.Request Quote Tabs -->
+
+    <!-- ========================= 
+            Testimonial #1
+    =========================  -->
+    <section id="testimonial" class="testimonial testimonial-1 text-center pt-80 pb-70">
+      <div class="bg-img"><img src="assets/images/backgrounds/2.png" alt="background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+            <div class="heading mb-50">
+              <span class="heading__subtitle">Testimonials</span>
+              <h2 class="heading__title">What People Are Saying
+              </h2>
+            </div><!-- /.heading -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-10 offset-lg-1">
+            <div class="carousel owl-carousel carousel-arrows carousel-dots" data-slide="1" data-slide-md="1"
+              data-slide-sm="1" data-autoplay="true" data-nav="true" data-dots="true" data-space="0" data-loop="true"
+              data-speed="800">
+              <!-- Testimonial #1 -->
+              <div class=" testimonial-item">
+                <div class="testimonial__thumb">
+                  <img src="assets/images/testimonials/thumbs/1.jpg" alt="author thumb">
+                </div><!-- /.testimonial-thumb -->
+                <div class="testimonial__content">
+                  <p class="testimonial__desc">“Pine Carrier made my move stress-free. From quote to delivery,
+                    everything was clear and on time. The driver was professional, and my car arrived safely. I highly
+                    recommend their service!”
+                  </p>
+                </div><!-- /.testimonial-content -->
+                <div class="testimonial__meta">
+                  <p class="testimonial__meta-desc">Sarah Mitchell, Graphic Designer
+                  </p>
+                </div><!-- /.testimonial-meta -->
+              </div><!-- /. testimonial-item -->
+              <!-- Testimonial #2 -->
+              <div class=" testimonial-item">
+                <div class="testimonial__thumb">
+                  <img src="assets/images/testimonials/thumbs/1.jpg" alt="author thumb">
+                </div><!-- /.testimonial-thumb -->
+                <div class="testimonial__content">
+                  <p class="testimonial__desc">“Shipping my motorcycle across states seemed complicated, but Pine
+                    Carrier handled it perfectly. The advisors were responsive, the pricing fair, and the carrier took
+                    excellent care of my bike. Smooth and reliable experience.”
+                  </p>
+                </div><!-- /.testimonial-content -->
+                <div class="testimonial__meta">
+                  <p class="testimonial__meta-desc">— Jason Lee, Freelance Photographer</p>
+                </div><!-- /.testimonial-meta -->
+              </div><!-- /. testimonial-item -->
+              <!-- Testimonial #2 -->
+              <div class=" testimonial-item">
+                <div class="testimonial__thumb">
+                  <img src="assets/images/testimonials/thumbs/1.jpg" alt="author thumb">
+                </div><!-- /.testimonial-thumb -->
+                <div class="testimonial__content">
+                  <p class="testimonial__desc">“As a military family, PCS moves are always hectic. Pine Carrier
+                    simplified vehicle transport for us with great communication and on-time delivery. Their team
+                    understood our timeline and made the process worry-free.”
+                  </p>
+                </div><!-- /.testimonial-content -->
+                <div class="testimonial__meta">
+                  <p class="testimonial__meta-desc">— Amanda Torres, Army Officer</p>
+                </div><!-- /.testimonial-meta -->
+              </div><!-- /. testimonial-item -->
+              <div class=" testimonial-item">
+                <div class="testimonial__thumb">
+                  <img src="assets/images/testimonials/thumbs/1.jpg" alt="author thumb">
+                </div><!-- /.testimonial-thumb -->
+                <div class="testimonial__content">
+                  <p class="testimonial__desc">“I needed to ship my luxury car for a long-distance move. Pine Carrier
+                    provided clear pricing, personalized guidance, and ensured my vehicle arrived safely. Their
+                    professionalism made the whole process very reassuring.”
+                  </p>
+                </div><!-- /.testimonial-content -->
+                <div class="testimonial__meta">
+                  <p class="testimonial__meta-desc">— Michael Reynolds, Business Consultant</p>
+                </div><!-- /.testimonial-meta -->
+              </div><!-- /. testimonial-item -->
+            </div>
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.testimonial1 -->
+
+    <!-- =====================
+       Clients 1
+    ======================== -->
+    <section id="clients1" class="clients clients-1 border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="carousel owl-carousel" data-slide="6" data-slide-md="4" data-slide-sm="2" data-autoplay="true"
+              data-nav="false" data-dots="false" data-space="20" data-loop="true" data-speed="700">
+              <div class="client">
+                <a href="#"><img src="assets/images/logo-1.png" alt="client"></a>
+              </div><!-- /.client -->
+              <div class="client">
+                <a href="#"><img src="assets/images/logo-2.png" alt="client"></a>
+              </div><!-- /.client -->
+              <div class="client">
+                <a href="#"><img src="assets/images/logo-3.png" alt="client"></a>
+              </div><!-- /.client -->
+              <div class="client">
+                <a href="#"><img src="assets/images/logo-4.avif" alt="client"></a>
+              </div><!-- /.client -->
+              <div class="client">
+                <a href="#"><img src="assets/images/logo-5.png" alt="client"></a>
+              </div><!-- /.client -->
+              <div class="client">
+                <a href="#"><img src="assets/images/logo-6.png" alt="client"></a>
+              </div><!-- /.client -->
+              <div class="client">
+                <a href="#"><img src="assets/images/logo-7.avif" alt="client"></a>
+              </div><!-- /.client -->
+              <div class="client">
+                <a href="#"><img src="assets/images/logo-8.png" alt="client"></a>
+              </div><!-- /.client -->
+            </div><!-- /.carousel -->
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.clients 1 -->
+
+    <!-- ======================
+           banner 3
+      ========================= -->
+    <section id="banner3" class="banner banner-3 p-0 bg-theme">
+      <div class="container-fluid col-padding-0">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6 background-banner bg-overlay">
+            <div class="bg-img"><img src="assets/images/shipping-service.webp" alt="background"></div>
+            <div class="video__btn video__btn-white video__btn-right-center">
+              <a class="popup-video" href="assets/images/video/vid-1.mp4">
+                <span class="video__player-animation"></span>
+                <span class="video__player-animation video__player-animation-2"></span>
+                <div class="video__player">
+                  <i class="fa fa-play"></i>
+                </div>
+              </a>
+            </div><!-- /.video -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="inner-padding">
+              <div class="heading heading-3 heading-white mb-50">
+                <h2 class="heading__title">Trusted Vehicle Shipping Across the United States
+                </h2>
+                <p class="heading__desc">Pine Carrier has been helping individuals and businesses move vehicles safely
+                  and efficiently. With a network of experienced carriers and a customer-focused approach, we handle
+                  everything from cars and motorcycles to trucks and specialty vehicles. Our aim is to make transport
+                  simple, fast, and reliable.
+                </p>
+                <p class="heading__desc mt-4">Every shipment is managed with care. From getting an instant quote to
+                  arranging pickup and final delivery, our dedicated advisors guide you at every step. We make sure your
+                  vehicle arrives on time and in excellent condition, whether it’s across the state, across the country,
+                  or even overseas.
+                </p>
+                <p class="heading__desc mt-4">We focus on building trust through transparency, clear communication, and
+                  professional service. By understanding each customer’s needs, we provide tailored solutions that fit
+                  timelines, budgets, and vehicle types. Choosing Pine Carrier means choosing peace of mind and
+                  dependable service every time.
+                </p>
+              </div><!-- /.heading -->
+              <div class="counters-white d-flex flex-wrap justify-content-between">
+                <div class="counter-item">
+                  <h4><span class="counter">6000</span><span>+</span></h4>
+                  <p class="counter__desc">Vehicles delivered</p>
+                </div>
+                <div class="counter-item">
+                  <h4><span class="counter">5000</span><span>+</span></h4>
+                  <p class="counter__desc">Satisfied customers</p>
+                </div>
+                <div class="counter-item">
+                  <h4><span class="counter">10</span><span>+Years</span></h4>
+                  <p class="counter__desc">Experience</p>
+                </div>
+                <div class="counter-item">
+                  <h4><span class="counter">8</span><span>+</span></h4>
+                  <p class="counter__desc">Carriers</p>
+                </div>
+              </div><!-- /.counters -->
+            </div>
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.banner 3 -->
+
+
+
+
+    <section id="fancyboxLayout1" class="fancybox-layout1 pt-90 pb-50">
+      <div class="container">
+        <div class="row">
+          <div class="heading text-center mb-50 col-12">
+            <h2 class="heading__title">Vehicle Shipping Services Across the United States
+            </h2>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="state-card">
+              <img src="assets/images/california.webp" alt="California" class="state-card__img">
+              <h4 class="state-card__title">California</h4>
+              <p class="state-card__desc">Reliable vehicle shipping across California with safe, fast, and flexible
+                service.</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="state-card">
+              <img src="assets/images/Florida.webp" alt="Florida" class="state-card__img">
+              <h4 class="state-card__title">Florida</h4>
+              <p class="state-card__desc">Pine Carrier ensures smooth, on-time vehicle transport throughout Florida.</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="state-card">
+              <img src="assets/images/Texas.webp" alt="Texas" class="state-card__img">
+              <h4 class="state-card__title">Texas</h4>
+              <p class="state-card__desc">Trusted transport solutions for cars, trucks, and motorcycles in Texas.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="state-card">
+              <img src="assets/images/New York.webp" alt="New York" class="state-card__img">
+              <h4 class="state-card__title">New York</h4>
+              <p class="state-card__desc">Safe and efficient vehicle delivery services across New York state.
+              </p>
+            </div>
+          </div>
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet">
+
+    <section class="royal-transport-section">
+      <div class="stats-wrapper">
+        <h2 class="main-title">Recognized To Be Nationwide Auto Transport Company</h2>
+        <p class="main-subtitle">We provide hassle-free fast and safe car shipping service</p>
+
+        <div class="stats-container">
+          <div class="stat-box">
+            <div class="icon-wrap"><img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="Reviews">
+            </div>
+            <h3 class="stat-number">2,105</h3>
+            <p class="stat-label">5-Star Reviews</p>
+          </div>
+          <div class="stat-box">
+            <div class="icon-wrap"><img src="https://cdn-icons-png.flaticon.com/512/2830/2830305.png" alt="Delivered">
+            </div>
+            <h3 class="stat-number">6,727</h3>
+            <p class="stat-label">Delivered</p>
+          </div>
+          <div class="stat-box">
+            <div class="icon-wrap"><img src="https://cdn-icons-png.flaticon.com/512/615/615075.png" alt="Customers">
+            </div>
+            <h3 class="stat-number">6,272</h3>
+            <p class="stat-label">Customers</p>
+          </div>
+          <div class="stat-box">
+            <div class="icon-wrap"><img src="https://cdn-icons-png.flaticon.com/512/1865/1865269.png" alt="Carriers">
+            </div>
+            <h3 class="stat-number">9,012</h3>
+            <p class="stat-label">Carriers</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-section">
+        <h2 class="main-title">What People Say About Royal Auto Ship?</h2>
+
+        <div class="carousel owl-carousel carousel-dots testimonial-slider" data-slide="3" data-slide-md="2"
+          data-slide-sm="1" data-autoplay="true" data-nav="false" data-dots="true" data-space="20" data-loop="true"
+          data-speed="800">
+          <div class="testimonial-card">
+            <div class="icon-circle"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="FB"></div>
+            <div class="stars">★★★★<span class="star-gray">★</span></div>
+            <p class="testi-text">My experience with Joe Milton was awesome He walked me through all the details and
+              simplified the whole process. Affordable Fast & Effective service Bravo ...</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google">
+            </div>
+            <div class="stars">★★★★★</div>
+            <p class="testi-text">Oscar was great with his customer service! I got my BMW transported from PA to FL and
+              it was in only 2 days, the driver was good as well and he also transported ...</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google">
+            </div>
+            <div class="stars">★★★★★</div>
+            <p class="testi-text">Used Royal Auto Ship for our return from Savannah GA back to southern CA. Oscar had
+              helped us with both trips out there and back. Very efficient and extremely ...</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="icon-circle"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="FB"></div>
+            <div class="stars">★★★★★</div>
+            <p class="testi-text">Excellent communication throughout the entire process. The driver was professional and
+              my vehicle arrived ahead of schedule. Highly recommend!</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google">
+            </div>
+            <div class="stars">★★★★★</div>
+            <p class="testi-text">First time shipping a car and they made it so easy. Prices were fair and the customer
+              service team was always available to answer my questions.</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="icon-circle"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="FB"></div>
+            <div class="stars">★★★★<span class="star-gray">★</span></div>
+            <p class="testi-text">Great experience! Everything went exactly as planned. The driver kept me updated on
+              his location and the car arrived in perfect condition.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================
+           projects Carousel
+      ========================= -->
+    <section id="projectsCarousel" class="projects-carousel">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+            <div class="heading text-center mb-50">
+              <span class="heading__subtitle">Real Shipping Success</span>
+              <h2 class="heading__title">Case Studies - Our Vehicle Transport Stories</h2>
+              <p class="heading__desc">Explore how Pine Carrier has safely and efficiently shipped vehicles across the
+                U.S. for diverse customer needs.
+              </p>
+            </div><!-- /.heading -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="carousel owl-carousel carousel-dots" data-slide="3" data-slide-md="2" data-slide-sm="1"
+              data-autoplay="true" data-nav="false" data-dots="true" data-space="30" data-loop="true" data-speed="800">
+              <div class="project-item">
+                <div class="project__img">
+                  <img src="assets/images/case-studies/grid/1.webp" alt="project img">
+                  <div class="project__cat">
+                    <a href="#">Analystics</a><a href="#">Optimization</a>
+                  </div><!-- /.project-cat -->
+                </div><!-- /.project-img -->
+                <div class="project__content">
+                  <h4 class="project__title"><a href="#">Cross-Country Car Delivery</a></h4>
+                  <p class="project__desc">A customer’s car was transported from coast to coast smoothly, arriving on
+                    time and in perfect condition without any delays.</p>
+                  <a href="#" class="btn btn__secondary btn__link">
+                    <span>Read More</span><i class="icon-arrow-right"></i>
+                  </a>
+                </div><!-- /.project-content -->
+              </div><!-- /.project-item -->
+              <div class="project-item">
+                <div class="project__img">
+                  <img src="assets/images/case-studies/grid/2.webp" alt="project img">
+                  <div class="project__cat">
+                    <a href="#">Warehousing</a><a href="#">Distribution</a>
+                  </div><!-- /.project-cat -->
+                </div><!-- /.project-img -->
+                <div class="project__content">
+                  <h4 class="project__title"><a href="#">Military PCS Relocation</a></h4>
+                  <p class="project__desc">We helped an active-duty service member ship their vehicle during a PCS move,
+                    providing clear guidance and timely delivery.</p>
+                  <a href="#" class="btn btn__secondary btn__link">
+                    <span>Read More</span><i class="icon-arrow-right"></i>
+                  </a>
+                </div><!-- /.project-content -->
+              </div><!-- /.project-item -->
+              <div class="project-item">
+                <div class="project__img">
+                  <img src="assets/images/case-studies/grid/3.webp" alt="project img">
+                  <div class="project__cat">
+                    <a href="#">Logistics</a><a href="#">Analytics</a>
+                  </div><!-- /.project-cat -->
+                </div><!-- /.project-img -->
+                <div class="project__content">
+                  <h4 class="project__title"><a href="#">Motorcycle Transport Service
+                    </a></h4>
+                  <p class="project__desc">A motorcycle was safely shipped across states with expert handling and secure
+                    loading, ensuring the bike arrived damage-free.
+                  </p>
+                  <a href="#" class="btn btn__secondary btn__link">
+                    <span>Read More</span><i class="icon-arrow-right"></i>
+                  </a>
+                </div><!-- /.project-content -->
+              </div><!-- /.project-item -->
+              <div class="project-item">
+                <div class="project__img">
+                  <img src="assets/images/case-studies/grid/4.webp" alt="project img">
+                  <div class="project__cat">
+                    <a href="#">Optimization</a><a href="#">Warehousing</a>
+                  </div><!-- /.project-cat -->
+                </div><!-- /.project-img -->
+                <div class="project__content">
+                  <h4 class="project__title"><a href="#">Luxury Vehicle Shipping
+                    </a></h4>
+                  <p class="project__desc">A luxury car was delivered via enclosed transport, keeping it protected from
+                    the elements and ensuring a premium, worry-free experience.
+                  </p>
+                  <a href="#" class="btn btn__secondary btn__link">
+                    <span>Read More</span><i class="icon-arrow-right"></i>
+                  </a>
+                </div><!-- /.project-content -->
+              </div><!-- /.project-item -->
+            </div><!-- /.carousel -->
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.projects-carousel -->
+    <!-- ========================= 
+            Shipping Cost Info
+      =========================  -->
+    <section id="shippingCostInfo" class="pt-90 pb-90 bg-theme">
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col-sm-12 col-md-12 col-lg-7 shipping-sticky-col">
+            <div class="info-left">
+              <h2 class="info-title">How Much Do Car Transport Companies Charge?
+              </h2>
+              <p class="info-text">The cost of vehicle shipping varies based on several factors. Pine Carrier provides
+                transparent pricing, so you know what to expect before booking your shipment. Our Locked-In Price
+                Promise ensures no surprise rate increases after your quote.
+              </p>
+              <p class="info-text">Prices depend on the type of transport, vehicle size, distance, and season. Whether
+                you choose open or enclosed transport, we match you with a trusted carrier that fits your budget and
+                needs.
+              </p>
+              <p class="info-text">Get an instant quote today and see your shipping cost clearly.
+              </p>
+              <a href="instant-quote.html" class="btn btn__bordered btn__primary info-btn">Car shipping cost
+                information</a>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-5">
+            <div class="factor-card">
+              <i class="fa fa-car" aria-hidden="true"></i>
+              <h4>Vehicle Size & Weight
+
+              </h4>
+              <p>Larger or heavier vehicles cost more to ship because they require more space, fuel, and handling effort
+                during transport.
+              </p>
+            </div>
+            <div class="factor-card">
+              <i class="fa fa-cogs" aria-hidden="true"></i>
+              <h4>The Car Condition
+
+              </h4>
+              <p>Inoperable or damaged vehicles require special equipment and extra care, which can increase the overall
+                shipping cost.
+
+              </p>
+            </div>
+            <div class="factor-card">
+              <i class="fa fa-truck" aria-hidden="true"></i>
+              <h4>Type Of Vehicle
+
+              </h4>
+              <p>Luxury, classic, or exotic vehicles often need enclosed transport, which is more expensive than
+                standard open carrier shipping.
+
+              </p>
+            </div>
+            <div class="factor-card mb-0">
+              <i class="fa fa-road" aria-hidden="true"></i>
+              <h4>Shipping Distance</h4>
+              <p>Longer distances naturally increase costs due to fuel, driver time, and logistical planning for safe,
+                on-time delivery.
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================= 
+            Home FAQ
+      =========================  -->
+    <section id="homeFaq" class="pt-90 pb-90">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="heading text-center mb-30">
+              <h2 class="heading__title">Frequently Asked Questions</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="faq-visual">
+              <div class="faq-visual__content">
+                <h3 class="faq-visual__title">Ready To Get Your Car Shipping Quote?</h3>
+                <p class="faq-visual__phone">Call us at <span>(307) 218-7132</span> today!</p>
+                <a href="instant-quote.html" class="btn btn__secondary">Get a Quote</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <div id="accordion">
+              <div class="accordion-item">
+                <div class="accordion__item-header" data-toggle="collapse" data-target="#collapse1">
+                  <a class="accordion__item-title" href="#">How do I get a quote for my vehicle?</a>
+                </div><!-- /.accordion-item-header -->
+                <div id="collapse1" class="collapse" data-parent="#accordion">
+                  <div class="accordion__item-body">
+                    <p>You can request a free instant quote online or contact our advisors. We provide clear pricing
+                      based on vehicle type, transport distance, and preferred service without charging upfront.
+                    </p>
+                  </div><!-- /.accordion-item-body -->
+                </div>
+              </div><!-- /.accordion-item -->
+              <div class="accordion-item">
+                <div class="accordion__item-header" data-toggle="collapse" data-target="#collapse2">
+                  <a class="accordion__item-title" href="#">How long does vehicle shipping take?
+
+                  </a>
+                </div><!-- /.accordion-item-header -->
+                <div id="collapse2" class="collapse" data-parent="#accordion">
+                  <div class="accordion__item-body">
+                    <p>Transit time depends on distance, transport type, and carrier schedules. Typically, shipments
+                      take a few days to a couple of weeks. Our advisors give an estimated delivery window when booking.
+                    </p>
+                  </div><!-- /.accordion-item-body -->
+                </div>
+              </div><!-- /.accordion-item -->
+              <div class="accordion-item">
+                <div class="accordion__item-header opened" data-toggle="collapse" data-target="#collapse3">
+                  <a class="accordion__item-title" href="#">Can I ship personal items in my vehicle?
+
+                  </a>
+                </div><!-- /.accordion-item-header -->
+                <div id="collapse3" class="collapse show" data-parent="#accordion">
+                  <div class="accordion__item-body">
+                    <p>Yes, you may keep up to 100 lbs of personal items in a single box or suitcase inside the trunk.
+                      This helps maintain safety and carrier compliance.
+
+                    </p>
+                  </div><!-- /.accordion-item-body -->
+                </div>
+              </div><!-- /.accordion-item -->
+              <div class="accordion-item">
+                <div class="accordion__item-header" data-toggle="collapse" data-target="#collapse4">
+                  <a class="accordion__item-title" href="#">What is the Locked-In Price Promise?
+
+                  </a>
+                </div><!-- /.accordion-item-header -->
+                <div id="collapse4" class="collapse" data-parent="#accordion">
+                  <div class="accordion__item-body">
+                    <p>The Locked-In Price Promise locks in your quoted price for 30 days. If market rates increase
+                      during this period, Pine Carrier covers the difference, preventing any surprise charges after
+                      booking.
+                    </p>
+                  </div><!-- /.accordion-item-body -->
+                </div>
+              </div><!-- /.accordion-item -->
+              <div class="accordion-item">
+                <div class="accordion__item-header" data-toggle="collapse" data-target="#collapse5">
+                  <a class="accordion__item-title" href="#">Are my vehicles insured during transport?
+
+                  </a>
+                </div><!-- /.accordion-item-header -->
+                <div id="collapse5" class="collapse" data-parent="#accordion">
+                  <div class="accordion__item-body">
+                    <p>Yes, every shipment is protected by the carrier’s cargo insurance. Pine Carrier also provides
+                      additional contingent insurance for extra protection in case the carrier’s coverage falls short.
+
+                    </p>
+                  </div><!-- /.accordion-item-body -->
+                </div>
+              </div><!-- /.accordion-item -->
+              <div class="accordion-item">
+                <div class="accordion__item-header" data-toggle="collapse" data-target="#collapse6">
+                  <a class="accordion__item-title" href="#">How do I track my vehicle shipment?
+                  </a>
+                </div><!-- /.accordion-item-header -->
+                <div id="collapse6" class="collapse" data-parent="#accordion">
+                  <div class="accordion__item-body">
+                    <p>While we don’t offer automated online tracking, you can contact your assigned driver or our
+                      support team anytime for real-time updates on your vehicle’s status.
+
+                    </p>
+                  </div><!-- /.accordion-item-body -->
+                </div>
+              </div><!-- /.accordion-item -->
+              <div class="accordion-item">
+                <div class="accordion__item-header" data-toggle="collapse" data-target="#collapse7">
+                  <a class="accordion__item-title" href="#">Do I need to pay upfront?
+
+                  </a>
+                </div><!-- /.accordion-item-header -->
+                <div id="collapse7" class="collapse" data-parent="#accordion">
+                  <div class="accordion__item-body">
+                    <p>No payment is required until a vetted carrier is assigned to your shipment. This ensures you only
+                      pay once your vehicle transport is confirmed and scheduled.
+
+                    </p>
+                  </div><!-- /.accordion-item-body -->
+                </div>
+              </div><!-- /.accordion-item -->
+              <div class="accordion-item">
+                <div class="accordion__item-header" data-toggle="collapse" data-target="#collapse8">
+                  <a class="accordion__item-title" href="#">Can you ship vehicles to Hawaii, Puerto Rico, or Guam?
+                  </a>
+                </div><!-- /.accordion-item-header -->
+                <div id="collapse8" class="collapse" data-parent="#accordion">
+                  <div class="accordion__item-body">
+                    <p>Yes, Pine Carrier offers specialized shipping to Hawaii, Puerto Rico, and Guam, managing ports,
+                      scheduling, and carriers to ensure your vehicle arrives safely and on time.
+                    </p>
+                  </div><!-- /.accordion-item-body -->
+                </div>
+              </div><!-- /.accordion-item -->
+
+            </div><!-- / #accordion -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= 
+            contact 1
+      =========================  -->
+    <section id="contact1" class="contact contact-1 p-0">
+      <div id="map"></div>
+      <script src="assets/js/google-map.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqrqPZOVegy1VIdyIcndxZY9YGoK-x0Yo&callback=initMap"
+        async defer></script>
+      <div class="container">
+        <div class="contact-panel contact-panel-2">
+          <div class="contact__panel-header d-flex align-items-center">
+            <h4 class="contact__panel-title">Global Locations</h4>
+          </div>
+          <div id="accordion">
+            <div class="accordion-item">
+              <div class="accordion__item-header opened" data-toggle="collapse" data-target="#collapse1">
+                <a class="accordion__item-title" href="#">Canada Address</a>
+              </div><!-- /.accordion-item-header -->
+              <div id="collapse1" class="collapse  show" data-parent="#accordion">
+                <div class="accordion__item-body">
+                  <ul class="contact__list list-unstyled">
+                    <li>R-10225 Yonge St, Suite #250, Richmond Hill, ON L4C 3B2</li>
+                  </ul>
+                </div><!-- /.accordion-item-body -->
+              </div>
+            </div><!-- /.accordion-item -->
+            <div class="accordion-item">
+              <div class="accordion__item-header" data-toggle="collapse" data-target="#collapse2">
+                <a class="accordion__item-title" href="#">USA Address</a>
+              </div><!-- /.accordion-item-header -->
+              <div id="collapse2" class="collapse" data-parent="#accordion">
+                <div class="accordion__item-body">
+                  <ul class="contact__list list-unstyled">
+                    <li>R-10225 Yonge St, Suite #250, Richmond Hill, ON L4C 3B2</li>
+                  </ul>
+                </div><!-- /.accordion-item-body -->
+              </div>
+            </div><!-- /.accordion-item -->
+          </div>
+        </div><!-- /.contact-panel -->
+      </div><!-- /.container -->
+    </section><!-- /.contact -->
+
+    <!-- ========================
+            Footer
+    ========================== -->
+    <div id="site-footer"></div>
+    <script>
+      (function () {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "assets/includes/footer.html", false);
+        xhr.send(null);
+        if (xhr.status === 200 || xhr.status === 0) {
+          document.getElementById("site-footer").innerHTML = xhr.responseText;
+        }
+      })();
+    </script>
+  </div><!-- /.wrapper -->
+
+
+  <!-- =========================
+        Quote Wizard Modal
+    =========================== -->
+  <div class="modal fade" id="quoteWizardModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Get A Quote Online</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="quote-modal-grid">
+            <div class="quote-modal-image" aria-hidden="true"></div>
+            <div class="quote-modal-form-panel">
+              <div id="quoteWizardModalHost"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/quote-wizard.js"></script>
+
+  <script>
+    (function () {
+      var section = document.getElementById("requestQuoteTabs");
+      var wizardWrap = section ? section.querySelector(".quote-wizard-wrap") : null;
+      var host = document.getElementById("quoteWizardModalHost");
+
+      if (!wizardWrap || !host) return;
+
+      var clone = wizardWrap.cloneNode(true);
+      var cloneForm = clone.querySelector("#quoteWizardForm");
+      var cloneThanks = clone.querySelector("#quoteThanks");
+
+      if (cloneForm) cloneForm.id = "quoteWizardFormModal";
+      if (cloneThanks) cloneThanks.id = "quoteThanksModal";
+
+      host.innerHTML = "";
+      host.appendChild(clone);
+
+      if (window.jQuery && jQuery.fn && typeof jQuery.fn.modal === "function") {
+        var $quoteModal = jQuery("#quoteWizardModal");
+
+        // Prevent focused descendants when modal is being aria-hidden.
+        $quoteModal.on("hide.bs.modal", function () {
+          var active = document.activeElement;
+          if (active && this.contains(active) && typeof active.blur === "function") {
+            active.blur();
+          }
+          document.body.focus && document.body.focus();
+        });
+
+        setTimeout(function () {
+          $quoteModal.modal("show");
+        }, 350);
+      }
+    })();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+RewriteEngine On
+
+# Redirect .html URLs to extensionless (except under /assets)
+RewriteCond %{REQUEST_URI} !^/assets/ [NC]
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ %1 [R=301,L,NE]
+
+# Serve extensionless URLs from .html files
+RewriteCond %{REQUEST_URI} !^/assets/ [NC]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+# Keep existing files/directories working normally
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Home page
+DirectoryIndex index.html
