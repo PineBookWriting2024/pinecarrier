@@ -866,7 +866,7 @@
                 <div class="testimonial__content">
                   <p class="testimonial__desc">They are the best of the best, and expertly trained team members who take
                     the extra step and go the extra mile, all to fulfill our dedicated promise to deliver innovative and
-                    dynamic solutions to our customers to fit the needs of a rapidly changing global environment.</p>
+                    dynamic solutions to our customers to fit the needs of a rapidly changing US environment.</p>
                 </div><!-- /.testimonial-content -->
                 <div class="testimonial__meta">
                   <img src="assets/images/testimonials/signature.png" alt="signature">
@@ -881,7 +881,7 @@
                 <div class="testimonial__content">
                   <p class="testimonial__desc">Logisti team is the best of the best, and expertly trained team members
                     who take the extra step and go the extra mile, all to fulfill our dedicated promise to deliver
-                    innovative and dynamic solutions to our customers to fit the needs of a rapidly changing global
+                    innovative and dynamic solutions to our customers to fit the needs of a rapidly changing US
                     environment.</p>
                 </div><!-- /.testimonial-content -->
                 <div class="testimonial__meta">
@@ -1026,45 +1026,92 @@
     <!-- ========================= 
           contact 1
     =========================  -->
-    <section id="contact1" class="contact contact-1 p-0">
-      <div id="map"></div>
-      <script src="assets/js/google-map.js"></script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqrqPZOVegy1VIdyIcndxZY9YGoK-x0Yo&callback=initMap"
-        async defer></script>
-      <div class="container">
-        <div class="contact-panel contact-panel-2">
-          <div class="contact__panel-header d-flex align-items-center">
-            <h4 class="contact__panel-title">Global Locations</h4>
-          </div>
-          <div id="accordion">
-            <div class="accordion-item">
-              <div class="accordion__item-header opened" data-toggle="collapse" data-target="#collapse1">
-                <a class="accordion__item-title" href="#">Canada Address</a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse1" class="collapse  show" data-parent="#accordion">
-                <div class="accordion__item-body">
-                  <ul class="contact__list list-unstyled">
-                    <li>R-10225 Yonge St, Suite #250, Richmond Hill, ON L4C 3B2</li>
-                  </ul>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-            <div class="accordion-item">
-              <div class="accordion__item-header" data-toggle="collapse" data-target="#collapse2">
-                <a class="accordion__item-title" href="#">USA Address</a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse2" class="collapse" data-parent="#accordion">
-                <div class="accordion__item-body">
-                  <ul class="contact__list list-unstyled">
-                    <li>R-10225 Yonge St, Suite #250, Richmond Hill, ON L4C 3B2</li>
-                  </ul>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-          </div>
-        </div><!-- /.contact-panel -->
-      </div><!-- /.container -->
-    </section><!-- /.contact -->
+   <section id="contact1" class="contact contact-1 p-0 position-relative">
+
+<!-- Google Map -->
+
+<div id="map" style="height:500px;width:100%;"></div>
+
+<script>
+function initMap() {
+
+  const office = { lat: 44.79776, lng: -106.95494 };
+
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 14,
+    center: office,
+    styles: [
+      {
+        featureType: "all",
+        elementType: "geometry",
+        stylers: [{ saturation: -30 }]
+      }
+    ]
+  });
+
+  const infoContent =
+  '<div style="font-family:Arial;padding:5px;">' +
+  '<h4 style="margin-bottom:6px;">Pine Carrier</h4>' +
+  '<p style="margin:0;">30 N Gould St 54593<br>Sheridan Wyoming 82801-6317</p>' +
+  '</div>';
+
+  const infoWindow = new google.maps.InfoWindow({
+    content: infoContent
+  });
+
+  const marker = new google.maps.Marker({
+    position: office,
+    map: map,
+    title: "Pine Carrier USA Office"
+  });
+
+  marker.addListener("click", () => {
+    infoWindow.open(map, marker);
+  });
+
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqrqPZOVegy1VIdyIcndxZY9YGoK-x0Yo&callback=initMap" async defer></script>
+
+<!-- Location Card -->
+
+<div class="container">
+<div style="
+position:absolute;
+top:60px;
+left:60px;
+background:#fff;
+padding:25px;
+border-radius:10px;
+box-shadow:0 10px 40px rgba(0,0,0,0.15);
+max-width:320px;
+">
+
+<h4 style="margin-bottom:10px;">USA Office</h4>
+
+<p style="margin-bottom:15px;">
+30 N Gould St 54593<br>
+Sheridan Wyoming 82801-6317
+</p>
+
+<a href="https://www.google.com/maps?q=44.79776,-106.95494"
+target="_blank"
+style="
+display:inline-block;
+background:#2c2c2c;
+color:#fff;
+padding:10px 18px;
+border-radius:6px;
+text-decoration:none;
+font-size:14px;
+">
+Get Directions </a>
+
+</div>
+</div>
+
+</section>
 
     <div id="site-footer"></div>
     <script>
